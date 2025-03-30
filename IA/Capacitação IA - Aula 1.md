@@ -79,21 +79,3 @@ A ideia é que algoritmos de machine learning sejam funções matemáticas. Por�
 <mark style="background: #FF5582A6;">Erros são inevitáveis! Existe Incerteza!</mark>
 
 Isaac Asimov idealizava em seus contos uma IA generica, isto é, funcionaria para todas as coisas. Hoje em dia no entanto, há inteligências artificiais de propósito específico.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
