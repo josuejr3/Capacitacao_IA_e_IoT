@@ -1,5 +1,5 @@
 
-####                                                   Introdução
+####                                                   *Introdução*
 
 A Inteligência artificial não começou a ser estudada de hoje, porém, recentemente ela teve um crescimento de estudos.
 
@@ -51,10 +51,32 @@ Crianças engatinhando em uma mesa sem ter noção do senso de profundidade ao c
 
 ![[Pasted image 20250329210954.png]]
 
+<mark style="background: #ADCCFFA6;">Fatores que possibilitam desenvolvimento de tecnologias de IA hoje em dia</mark>
 
+-  Quantidade de dados para serem processados;
+-  Poder computacional (Nuvem, GPUs);
+-  Pesquisas na área.
 
+<mark style="background: #ABF7F7A6;">Modelo Transformer - ChatGPT</mark>
 
+~={cyan}https://blog.nvidia.com.br/blog/o-que-e-um-modelo-transformer/#:~:text=Um%20modelo%20transformer%20%C3%A9%20uma,como%20as%20palavras%20desta%20frase.&text=Se%20voc%C3%AA%20quiser%20participar%20da,de%20AI%2C%20obtenha%20um%20transformer.=~
 
+-  Modelo (algoritmo);
+-  Treinamento - ajuste de parâmetros do algoritmo de acordo com dados que possuo
+
+Como vimos anteriormente, a IA tem como objetivo reconhecer padrões, e separar em grupos específicos. 
+
+![[Pasted image 20250329213050.png]]
+
+---
+
+#### *Machine Learning*
+
+A ideia é que algoritmos de machine learning sejam funções matemáticas. Porém, uma função não convencional, em que após treinar o código com um conjunto de dados, ele consiga definir uma resposta para um dado que ainda não foi utilizada.
+
+~={red}Lembrando que levando em consideração a imagem a cima, o código treinado só irá reconhecer: cachorro, gato, cavalo, porco, galinha e pato.=~
+
+Erros são inevitáveis
 
 
 
