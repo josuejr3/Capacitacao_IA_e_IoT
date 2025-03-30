@@ -61,3 +61,41 @@ Dispositivos IoT podem ainda mudar o seu estado através de um controle. Esse co
 -  Novos algoritmos e tecnologias para processar um grande volume de dados
 	-  ~={blue}Exemplo: informações geradas por milhares/milhões/bilhões de sensores=~
 -  Possibilidade de conectar dispositivos "pequenos", (microcontroladores, por exemplo) com grandes infraestruturas computacionais (nuvem).
+
+A inteligência das coisas possibilita a união de várias de tecnologias sendo principalmente:
+
+| RFID              | Sistemas Embarcados     | Redes móveis |
+| ----------------- | ----------------------- | ------------ |
+| Cloud Computing   | Inteligência Artificial | Big Data     |
+| Redes de sensores | Edge/Fog Computing      | ...          |
+
+> ~={green}Exemplos de Aplicaçõs de IoT=~
+
+![[Pasted image 20250330002920.png]]
+
+![[Pasted image 20250330003047.png]]
+
+![[Pasted image 20250330003401.png]]
+
+![[Pasted image 20250330003952.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
