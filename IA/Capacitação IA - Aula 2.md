@@ -65,5 +65,37 @@ Outra forma de usar funções
 
 -  Existência de padrão
 -  Não existe uma função que resolve o problema;
--  Dados.
+-  Dados (porém, eles devem estar organizados).
 
+---
+
+<mark style="background: #ABF7F7A6;">Tipos de Aprendizado</mark>
+
+-  <mark style="background: #BBFABBA6;">Aprendizado supervisionado</mark>
+
+	Possui esse nome, pois ele ajusta os parâmetros x1 e x2 usando o Y.
+
+	-  Conjunto de treinamento com **rótulos associados**. Ex: Jose é bom pagador, Felipe é mal pagador...
+
+	Para rótulos de classe discretos, esse problema é chamado de classificação. Já para valores contínuos ele é conhecido como regressão
+
+	Base de Classificação
+
+| X1  | X2  |    Y    |
+| :-: | :-: | :-----: |
+| 1.2 | 2.3 | **Bom** |
+| 3.2 | 3.2 | **Mau** |
+	 Base de Regressão
+
+| **X1** | **X2** | **Y** |
+| :----: | :----: | :---: |
+|  1.2   |  2.3   |  4.2  |
+|  3.2   |  3.2   |  3.1  |
+
+-  <mark style="background: #BBFABBA6;">Aprendizado não-supervisionado</mark>
+
+	Nesse tipo de algoritmo não são utilizados "y" como valor de referência/rótulo, tem-se apenas a entrada.
+
+	O algoritmo tenta agrupar os dados de alguma maneira, formando agrupamentos ou **clusters**
+
+	Após a definição de agrupamentos são feitas analises para entender o que cadagrupo representa no contexto do problema. 
