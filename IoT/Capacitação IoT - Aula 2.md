@@ -32,11 +32,67 @@ Trazendo para a área da computação, basicamente é termos a organização de 
 ~={blue}Fatores Importantes para Arquitetura de IoT=~
 
 -  Escala (grande quantidade de dispositivos)
--  Segurança (maior exposição)
--  Restrições de Recursos
--  Volume de Dados
--  Suporte a Dispositivos Legados
--  Tempo
+-  Segurança (maior exposição de dispositivos)
+-  Restrições de Recursos (limitações de processamento, memória e comunicação)
+-  Volume de Dados (geração massiva de dados por dispositivos IoT)
+-  Suporte a Dispositivos Legados (equipamentos antigos que precisam ser integrados à IoT)
+-  Tempo (suporte a operações de tempo real)
+
+<mark style="background: #ABF7F7A6;">Escala</mark>
+
+Esse tópico é visto em cidades inteligentes, as quais possuem milhares de *endpoints* para milhões de *endpoints* em uma determinada área. 
+
+Desafios: endereçamento e identificação, conectividade (rede de acesso) e como o armazenamento e o transporte de dados é feito.
+
+<mark style="background: #ABF7F7A6;">Segurança</mark>
+
+A segurança é importante de ser estudada, pois podem ocorrer: ameaças relacionadas a comunicação dos dispositivos, ameaças ao ciclo de vida dos aparelhos IoT, ameaças ao acesso físico e também as relacionadas ao firmware dos dispositivos.
+
+Para resolver parte de problemas de acesso e deixar os sistemas mais seguros, são utilizados diversos mecanismos que melhoram a segurança, sendo eles os seguintes:
+
+-  **Autenticação** de todas as entidades envolvidas (ex: gateway = roteador, endpoint = celular, plataformas de serviços etc);
+-  **Criptografia** de dados sensíveis; 
+-  **Adequação a legislação** para proteção de dados;
+-  **Monitoramento e detecção de anomalias** em dispositivos.
+
+<mark style="background: #ABF7F7A6;">Restrições de Recursos</mark>
+
+Como na maioria das vezes os dispositivos usam componentes de baixo custo, o poder de processamento também não é tão alto. 
+
+-  **Processamento** (microprocessadores e microcontroladores de **baixo custo**);
+-  **Armazenamento** (em alguns casos "poucos" KB de memória estão disponíveis);
+-  Limitações de **rede** (taxa de bits, alcance, duty-cycle, disponibilidade);
+-  Consumo de **energia** (dispositivos alimentados por **baterias**)
+
+<mark style="background: #ABF7F7A6;">Volume de Dados</mark>
+
+![[Pasted image 20250330161228.png]]
+
+O volume de dados de dispositivos IoT crescem ao longo do tempo
+
+Além disso, quando estamos falando de arquitetura é importante que os dados passem por filtragem e sumarização e essas etapas podem ser feitas ao longo da arquitetura.
+
+Ademais, o processamento e resposta na ~={yellow}borda da rede=~ com objetivo de reduzir a latência. Por exemplo, eu não preciso de uma resposta imediata de um servidor, eu posso utilizar a resposta de um gateway como forma de ativar um atuador.
+
+<mark style="background: #ABF7F7A6;">Suporte à Dispositivos Legado</mark>
+
+<mark style="background: #ABF7F7A6;">Tempo</mark>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
