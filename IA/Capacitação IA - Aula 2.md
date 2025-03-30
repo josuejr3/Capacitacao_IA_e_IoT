@@ -37,4 +37,33 @@ Na imagem acima, vemos que se trata de uma função exata, uma matemática "brut
 
 Em Machine Learning isso não existe, ~={red}não há =~uma função que represente todo o dataset. O que será feito é tentar criar uma função que ela possa ser ajustada de acordo com os dados. 
 
--  Basicamente, o aprendizado de máquina funciona como uma função que é generalizada para um conjunto de dados e com isso, um novo dado é usado (que não foi testado)
+-  Basicamente, o aprendizado de máquina funciona como uma função que é generalizada para um conjunto de dados e com isso, um novo dado é usado (que não foi testado) e a função será capaz de reconhecer;
+
+>~={green} Exemplo - gráfico porta AND=~
+
+![[Pasted image 20250330131330.png]]
+
+~={green}Nesse caso, como o espaço foi dividido em duas regiões, o ponto (0.8, 0.8) é considerado True (1).=~
+
+![[Pasted image 20250330132227.png]]
+
+~={green}Outro exemplo é a situação de identificação de um bom cliente em um banco.=~
+
+<mark style="background: #ADCCFFA6;">Regressão X Classificação</mark>
+
+Basicamente a diferença é que na regressão o Y possui intervalos contínuos, enquanto que na classificação os intervalos são discretos.
+
+-  Regressão linear - cria uma reta que melhor representa os dados
+
+![[Pasted image 20250330132904.png]]
+
+Outra forma de usar funções
+
+![[Pasted image 20250330133122.png]]
+
+<mark style="background: #ADCCFFA6;">Aprendizado de Máquina é usado quando...</mark>
+
+-  Existência de padrão
+-  Não existe uma função que resolve o problema;
+-  Dados.
+
