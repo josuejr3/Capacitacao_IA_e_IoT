@@ -76,7 +76,9 @@ A ideia é que algoritmos de machine learning sejam funções matemáticas. Por�
 
 ~={red}Lembrando que levando em consideração a imagem a cima, o código treinado só irá reconhecer: cachorro, gato, cavalo, porco, galinha e pato.=~
 
-Erros são inevitáveis
+<mark style="background: #FF5582A6;">Erros são inevitáveis! Existe Incerteza!</mark>
+
+Isaac Asimov idealizava em seus contos uma IA generica, isto é, funcionaria para todas as coisas. Hoje em dia no entanto, há inteligências artificiais de propósito específico.
 
 
 
