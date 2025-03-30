@@ -38,4 +38,26 @@ Dispositivos IoT podem ainda mudar o seu estado através de um controle. Esse co
 -  Conectividade pervasiva (o usuário "nem sente" a presença do dispositivo no seu cotidiano);
 -  Adoção em larga escala de redes de IP;
 -  Redução de custos e miniaturização - mais recurso computacional com custo reduzido e em dispositivos pequenos;
--  Big Data e Cloud - processamento de uma vata quantidade de dados e integração a "pequenos" dispositivos com "grandes" infraestruturas computacionais.
+-  Big Data e Cloud - processamento de uma vata quantidade de dados e integração a "pequenos" dispositivos com "grandes" infraestruturas computacionais. <span style="color:rgb(192, 0, 0)">Dispositivo pequeno conectado a um data center, por exemplo.</span> 
+
+~={cyan}Eixos da conectividade pervasiva=~
+
+![[Pasted image 20250329234714.png]]
+
+~={cyan}Protocolos IP=~
+
+-  Protocolos padronizados e amplamente implementados;
+-  Possibilidade de prover endereços de IP únicos para "infinitos" dispositivos. 
+	- De ~4 bilhões de endereços (IPv4) para ~3,4 x 10^38 (IPv6)
+		No IPv6 são 128 bits, enquanto que no IPv4 são 32 bits.
+
+~={cyan}Redução de custos e miniaturização=~
+
+-  Aumento de poder computacional com custo menor;
+-  Miniaturização de diversos componentes (microcontroladores, ESP, STM, Raspberry Pi).
+
+~={cyan}Big Data e Cloud=~
+
+-  Novos algoritmos e tecnologias para processar um grande volume de dados
+	-  ~={blue}Exemplo: informações geradas por milhares/milhões/bilhões de sensores=~
+-  Possibilidade de conectar dispositivos "pequenos", (microcontroladores, por exemplo) com grandes infraestruturas computacionais (nuvem).
