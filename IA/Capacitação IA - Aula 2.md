@@ -99,3 +99,5 @@ Outra forma de usar funções
 	O algoritmo tenta agrupar os dados de alguma maneira, formando agrupamentos ou **clusters**
 
 	Após a definição de agrupamentos são feitas analises para entender o que cadagrupo representa no contexto do problema. 
+
+![[Pasted image 20250330142024.png]]
