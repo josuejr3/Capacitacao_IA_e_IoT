@@ -76,7 +76,115 @@ Ademais, o processamento e resposta na ~={yellow}borda da rede=~ com objetivo de
 
 <mark style="background: #ABF7F7A6;">Suporte à Dispositivos Legado</mark>
 
-<mark style="background: #ABF7F7A6;">Tempo</mark>
+Para conectar máquinas legados com os dispositivos atuais é necessário fazer a conexão. Algumas possíveis soluções são:
+
+-  Tradução usando protocolos;
+-  Dispositivos intermediários (gateway)
+
+---
+
+~={cyan}Modelos de Comunicação para IoT definidos pela RFC (protocolos)=~
+
+-  Device to Device
+
+	Nesse caso temos como exemplo a conexão de uma lâmpada IoT com um interruptor IoT de fabricantes distintos
+
+	![[Pasted image 20250330163138.png]]
+	
+	1.  Qual padrão de comunicação?
+		~={green}Implementar o mesmo padrão de comunicação.=~
+	2.  Como se dá o endereamento?
+		~={green}IPv6 único, identificador lógico em camada de aplicação, um dispositivo tem como descobrir outros que estão no ambiente., endereço MAC..=~
+	3.  Há mecanismos de descoberta?
+	4.  Quais os protocolos de transporte e aplicação?
+	5.  Qual o modelo de dados?
+
+Basicamente protocolo define como é a troca de informações entre duas entidades, nesse caso, dispositivos (conjunto de regras). 
+
+- Device to Cloud
+
+	Esse tipo de conexão o dispositivo IoT conecta diretamente à Internet.
+
+	1. Permite comunicação **IP fim-a-fim**.
+	2. Diferentes protocolos de aplicação e transporte podem ser usados
+		~={green}ex: HTTP, CoAP, UDP, TCP...=~
+	3. Algum **mecanismo de autenticação** deve ser ~={green}implementado=~
+
+	Como exemplos temos dispositivos que possuem conexão direta com rede, ou seja, que não precisam interligar com outros dispositivos para ter acesso. (WiFi - cabos Ethernet)
+		~={green}ex: ESP32=~
+		
+	![[Pasted image 20250330164434.png]]
+
+
+-  Device to 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
