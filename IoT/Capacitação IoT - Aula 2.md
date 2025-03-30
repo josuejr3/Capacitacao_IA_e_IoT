@@ -116,16 +116,25 @@ Basicamente protocolo define como é a troca de informações entre duas entidad
 	![[Pasted image 20250330164434.png]]
 
 
--  Device to 
+-  Device to Gateway
 
+	Esse tipo de comunicação é utilizado em tecnologias que não suportam nativamente o acesso direto à internet.  Por ese motivo utiliza-se o gateway ele funciona como um dispositivo intermediário, ele "traduz" um conjunto de protocolos para outro conjunto.
 
+	1.  Integração de dispositivos legados;
+	2.  Possuem mecanismos específicos de autenticação
+	3.  Tradução de endereçamento
+		 ex: camada de rede (ex: 6LoWPAN) ou em camada de aplicação
 
+	![[Pasted image 20250330164913.png]]
 
+-  Compartilhamento de Dados no Back-end
 
-
-
-
-
+	-  Compartilhamento de dados entre diferentes provedores de serviços;
+	-  Pode-se utilizar protocolos e modelos de dados usados em **serviços web** 
+		-  APIs RESTful
+		-  Mecanismos de autenticação (ex: Oauth)
+		
+	![[Pasted image 20250330171317.png]]
 
 
 
