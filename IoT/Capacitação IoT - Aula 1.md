@@ -21,4 +21,21 @@ Basicamente um objeto ou "coisa" será visto a partir do seu estado. O estado é
 
 Mala com algum tipo de sensor que identifica se ela está aberta ou fechada, como também um outro sensor indicando a localização.
 
-Dispositivos IoT podem ainda mudar o seu estado através de um controle. Esse controle é feito a partir de atuadores.
+Dispositivos IoT podem ainda mudar o seu estado através de um controle. Esse controle é feito a partir de ~={green}atuadores=~ (Lâmpada).
+
+~={cyan}Mapeamento do mundo físico para o da informação=~
+
+-  Sistema Ciber-Físico: sistema embarcado com sensores e atuadores acoplados a algo. Esse sistema gera informações para algum outro dispositivo ou aplicação.
+
+		Exemplo: Transporte Inteligente e Aplicações na Saúde.
+
+	 A diferença de um sistema ciber-fisico para internet das coisas é basicamente a possibilidade de interconexão entre "as coisas".
+
+~={blue}Dispositivos conectados a Internet, mas com uso local (por exemplo um quarto), também são considerados dispositivos IoT.=~
+
+~={cyan}Evolução da IoT=~
+
+-  Conectividade pervasiva (o usuário "nem sente" a presença do dispositivo no seu cotidiano);
+-  Adoção em larga escala de redes de IP;
+-  Redução de custos e miniaturização - mais recurso computacional com custo reduzido e em dispositivos pequenos;
+-  Big Data e Cloud - processamento de uma vata quantidade de dados e integração a "pequenos" dispositivos com "grandes" infraestruturas computacionais.
