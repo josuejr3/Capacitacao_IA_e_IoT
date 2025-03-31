@@ -135,6 +135,58 @@ Basicamente protocolo define como é a troca de informações entre duas entidad
 		-  Mecanismos de autenticação (ex: Oauth)
 		
 	![[Pasted image 20250330171317.png]]
+---
+
+~={cyan} Componentes Básicos de uma Arquitetura de IoT=~
+
+-  End devices
+
+![[Pasted image 20250330171948.png]]
+
+-  Faltante - uma unidade de alimentação
+-  Transceptor - elemento de hardware que garante a comunicação com o que queremos (WiFi, Blueetooth, ZigBee e entre outros...)
+
+O ideal é que todos esses componentes estejam em um microcontrolador.
+
+
+> ~={green}Exemplo de Gateway LoRa=~
+
+![[Pasted image 20250330173948.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
