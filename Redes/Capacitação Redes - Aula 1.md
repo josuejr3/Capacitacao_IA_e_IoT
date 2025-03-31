@@ -174,7 +174,89 @@ Dependendo do tipo da máscara de sub-rede vai haver tamanhos diferentes ou quan
 
 ![[Pasted image 20250331174952.png]]
 
-Como vimos antes, os últimos bits de uma máscara de sub-rede definem os hosts, ou seja os "hospedes" que podem se comunicar com o min
+Como vimos antes, os últimos bits de uma máscara de sub-rede definem os hosts, ou seja os "hospedes" que podem se comunicar com o minha origem. A mais comum delas é a 255.255.255.0
+
+- Olhando o endereço de 32 bits dela, percebemos que existem 8 bits 0. 
+- Quando fizermos 2 ^ 8 obtemos 256 endereços para representação de host
+- Dessa forma, apenas 256 dispositivos podem ser conectar simultaneamente a rede
+
+~={red}Obs: o comprimento do prefixo é basicamente a quantidade de bits 1 no endereço de 32 bits da máscara de sub-rede.=~
+
+Outro ponto importante quando estamos falando de endereço de IP e quando falamos de IPv4 é que eles fazem um AND lógico para definir o endereço da rede IPv4
+
+Isso ocorre para o controle de comunicações entre dispositivos de uma rede externa e da rede "interna"
+
+![[Pasted image 20250331180708.png]]
+
+Um pouco mais sobre endereços de rede, mascaras de sub-rede e endereços de broadcast
+
+![[Pasted image 20250331180900.png]]
+
+A partir disso, ao fazermos o cálculo da quantidade de endereços de máscara de sub-rede nos diminuimos em duas unidades.
+
+-  Uma para endereço de rede e outra para endereço de broadcast (difusão).
+
+Sendo assim, na rede observada anteriormente, seriam apenas <mark style="background: #FFB86CA6;">254</mark> endereços ao invés de 256.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
