@@ -45,6 +45,38 @@ A divisão em camadas, auxilia na detecção de problemas, pois a partir de um e
 
 <mark style="background: #FF5582A6;">Trouble shooting - pesquisar</mark>
 
+![[Pasted image 20250331162252.png]]
+
+Em resumo, o modelo OSI é só uma referência, enquanto que o TCP/IP é o utilizado.
+
+----
+
+~={cyan}Meios Físicos=~
+
+-  Quando estamos estudando os meios físicos, podemos ter o formato guiado e o não guiado.
+Se o envio do sinal é eletrico, podemos usar meios metálicos.
+
+1.  Cabos de cobre (ex: cabos de rede)
+
+	Fios de cobre, são mais simples de instalar, possuem baixa resistência de corrente elétrica. Possui possibilidade de ocorrer interferência eletromagnética
+	
+2.  Fibra óptica
+
+	Transporte de luz, não tem interferência de choque elétrico, interferência elétrica e eletromagnética. Além disso, a uma maior quantidade de dados que podem ser passados, como por exemplo: 10 Gigabit/segundo 
+
+3.  Redes Wireless (meio não guiado)
+
+	Ondas eletromagnéticas são usadas como meio físico. Ela não é confinada num meio físico. Porém, há problemas quando ocorrem fenomenos físicos, cmo por exemplo quando chuvas ocorrem. Apesar disso, ela traz mais flexibilidade e maior mobilidade aos usuários que fazem esse tipo de conexão.
+
+~={cyan}Observando a camada 2 de Data Link Addresses=~
+
+![[Pasted image 20250331164433.png]]
+
+Nesse exemplo, podemos ver a comunicação entre um usuário e um destino à direita. Além disso, tem-se dispositivos intermediários, cada um possuindo sua~={red} placa de rede=~,  R1  e R2 possuem duas placas cada.
+
+-  Todos os dispositivos possuem endereço lógico e endereço físico;
+-  Cada "NIC", placa de rede, possui endereço físico;
+-  Quando estamos usando "ethernet" o endereço de físico (MAC), pode ser visto através das cores de NIC que se alteram quando eu mudo de uma camada L2 para uma L3
 
 
 
