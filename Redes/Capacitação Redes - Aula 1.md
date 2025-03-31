@@ -114,7 +114,141 @@ Já no Broadcast o destino é para todos que estão no dominio o MAC de destino 
 
 ![[Pasted image 20250331171911.png]]
 
-O Multicast funciona cm
+O Multicast funciona como um Broadcast reduzido, enviado a informação apenas para alguns endereços específicos.
+
+![[Pasted image 20250331172157.png]]
+
+---
+
+~={cyan}Domínio de Colisão de Pacotes (Colisões em rede sem fio)=~
+
+-  Em redes cabeadas dificilmente nos preocupamos com a colisão de pacotes. Isso ocorre por causa do full duplex, que é basicamente um canal para transmitir informação e outro para receber.
+
+-  Quando o domínio de colisão é grande, aumenta o atraso na comunicação.
+
+![[Pasted image 20250331172702.png]]
+
+~={cyan}Domínio de Broadcast
+=~
+-  Quanto maior o domínio de broadcast pior é o desempenho da rede.
+---
+
+~={blue}Endereçamento Lógico - IPv4=~
+
+-  Endereço mais comum nas redes no nosso dia a dia;
+-  Composto por 32 bits no total;
+-  Estruturado em 4 campos de 8 bits.
+-  Representado por decimal pontuado
+
+> ~={green}Exemplo=~
+
+        Parte de Rede             | Parte de Host
+	192 .       168 .       10 .  |     10
+	11000000   10101000  00001010 |  00001010
+
+A primeira parte do endereço representa a parte de rede (3 números), já a segunda parte é a representação da parte de host.
+
+Além disso, o IP poderia ter uma terceira parte representando a sub-rede.
+
+<mark style="background: #FF5582A6;">Obs: máscara de sub-rede só faz sentido quando estamos falando de IP e ela basicamente fala qual a parte de rede e qual a parte de host.</mark>
+
+~={cyan}Máscara de sub-rede=~
+
+A máscara de sub-rede é similar ao exemplo que temos de endereço de IP. Uma caracterísitca importante é que ela não pode ter bits descontiguos.
+
+Sendo assim, se há um bit 0 na mascara de sub-rede, todos os bits à direita devem também ser 0.
+
+![[Pasted image 20250331174233.png]]
+
+-  Todo bit 1 da mascara de sub-rede corresponde a parte de rede, enquanto todo bit 0 corresponde a parte de host.
+
+~={red}Obs: default gateway pode ser considerado um roteador=~
+
+---
+
+Em IoT o endereçamento será necessário desde a fase de planejamento, implentação e trouble shooting.
+
+Dependendo do tipo da máscara de sub-rede vai haver tamanhos diferentes ou quantidade de equipamentos diferentes de conectados.
+
+> ~={green}Exemplo=~
+
+![[Pasted image 20250331174952.png]]
+
+Como vimos antes, os últimos bits de uma máscara de sub-rede definem os hosts, ou seja os "hospedes" que podem se comunicar com o min
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
