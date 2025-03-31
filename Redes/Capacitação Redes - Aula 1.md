@@ -78,6 +78,115 @@ Nesse exemplo, podemos ver a comunicação entre um usuário e um destino à dir
 -  Cada "NIC", placa de rede, possui endereço físico;
 -  Quando estamos usando "ethernet" o endereço de físico (MAC), pode ser visto através das cores de NIC que se alteram quando eu mudo de uma camada L2 para uma L3
 
+---
+
+~={cyan}Endereçamento Físico - MAC
+=~
+Endereço físico quando falamos de ethernet é chamado de endereço MAC. 
+
+-  É um endereço físico que já vem de fábrica na placa de rede;
+-  Está na camada de "enlace";
+-  É composto por 48 bits, com representação em hexadecimal;
+-  Os 24 bits mais significativos representam o ~={green}fabricante=~ (OU- Organizationally Unique Identifier)
+-  Os 24 bits menos significativos vão representar uma identificação para a interface específica
+
+> ~={green}Exemplo=~
+
+![[Pasted image 20250331170945.png]]
+
+-  A representação de endereço físico pode ser feita de diversas formas, com separação por :, . e até -.
+
+> ~={green}Exemplos=~
+
+-  00-05-9A-3C-78-00
+- 00:05:9A:3C:78:00
+- 0005.9A3C.7800
+
+Além disso, existem MACs específicos para determinados para modos de aplicações específicos (~={cyan}MAC Unicast=~).
+
+![[Pasted image 20250331171420.png]]
+
+-  Protocolo ARP - Protocolo que faz o mapeamento de um endereço MAC a partir de um IP específico.
+
+No caso do MAC Unicast, ele utiliza como MAC de destino uma faixa de valores em que o MAC que vai receber as informações está localizado. No caso acima, ele está com o MAC de destino 00-07-E9-42-AC-28
+
+Já no Broadcast o destino é para todos que estão no dominio o MAC de destino vai estar com dígitos hexadecimais em F.
+
+![[Pasted image 20250331171911.png]]
+
+O Multicast funciona cm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
