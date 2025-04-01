@@ -105,7 +105,9 @@ Isso significa que a entropia é 1 (máxima)
 
 <mark style="background: #D2B3FFA6;">Dúvida</mark>
 
-Já que a entropia mede o quão desordenados está o meu atributo, eu poderia usar variância ou desvio padrão?
+- Já que a entropia mede o quão desordenados está o meu atributo, eu poderia usar variância ou desvio padrão?
+
+- A entropia é uma medida exclusiva de IA ou ela é vista na estátistica também?
 
 ---
 
@@ -125,9 +127,113 @@ $$
 
 -  Suponha que S é uma coleção de 14 exemplos, incluindo 9 ~={blue}positivos=~ e 5 ~={red}negativos=~.
 
-	Notação: [9+, 5-]
+	Notação: [9+, 5-]       (1)
 
-A entropia de 
+A entropia de S em relação a esta classificação booleana é dada por:
+
+	Entropy([9+, 5-]) = -(9/14)log2(9/14) - (5/14)log2(5/14) = 0.940
+
+Como o valor se aproximou de 1 um significa que ele não é um atributo tão bom para ser a raiz.
+
+---
+
+~={cyan}Ganho de Informação=~
+
+A fórmula do ganho de informação baseada na entropia do atributo
+
+$$
+ganho(Exs, Atri) = entropia(Exs) - Σ (Exsv/Exs) * entropia (Exsv)
+$$
+
+Todo o somátorio é baseado em informações do atributo
+
+-  Exsv - Número de exemplos com valor do atributo
+-  Exs - Número de exemplos total
+
+Sendo assim, a construção da árvore leva em consideração essa fórmula com objetivo de diminuir a entropia (aleatoriedade) da váriavel que define as classes.
+
+![[Pasted image 20250401100455.png]]
+
+<mark style="background: #FF5582A6;">Nesse exemplo, apesar de estarmos considerando três valores de atributos (chuva, nublado e sol) o Y só pode ser SIM (joga) ou (NÃO) não joga. Dessa forma fazemos o cálculo baseado nisso
+</mark>
+
+![[Pasted image 20250401100816.png]]
+
+Funciona como se fosse uma proporção condicional. Sendo assim, temos que:
+
+A QUANTIDADE DE JOGA se o tempo é SOL = 2/5
+A QUANTIDADE DE NÃO JOGA se o tempo é SOL = 3/5
+
+![[Pasted image 20250401100951.png]]
+
+Por fim, a medida do ganho de informação é dada pela entropia das classes desejadas para Y que no caso foi a divisão em (1), subtraido da informação do tempo
+
+![[Pasted image 20250401101759.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
