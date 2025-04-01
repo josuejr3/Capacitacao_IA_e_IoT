@@ -66,6 +66,125 @@ No exemplo acima, não há como definir o melhor atributo, tendo em vista que é
 
 ~={cyan}Critérios para escolha de atributo=~
 
+O cálculos para os atributos são para todos os atributos da árvore. E além disso, os valores desses atributos definem ~={blue}partições=~ (galhos) do conjunto de exemplos.
+
+Como critérios para escolha de atributo usamos o seguinte
+
+-  Ganho de Informação
+
+O ganho de informação mede a redução da ~={blue}Entropia=~ causada pela ~={blue}partição=~ dos exemplos de acordo com os valores do atributo
+
+*~={blue}"A entropia define como é que está a aleatoriedade de um sistema físico, ou seja, ela mede a aleatoriedade de uma variável"=~*
+
+O atributo que possuir meu maior valor de ganho de informação será o que vai ser usado como nó.
+
+~={purple}ENTROPIA=~
+
+$$
+ Entropia (S) = - ((p+) * log 2 (p+) - ((p-) * log2 (p-)))
+$$
+
+Sendo S uma amostra dos exemplos de treinamento, A entropia vai medir a *"impureza"* de S.
+
+-  p+ é a proporção de exemplos positivos em S
+-  p- é a proporção de exemplos negativos em S
+
+Nesse caso, utilizamos apenas a proporção de duas classes, porém, se tivessemos mais classes, como por exemplo: alto, médio e baixo, seriam três "partes".
+
+> ~={green}Exemplo=~
+
+Se p+ = 1, p- = 0
+
+A entropia é 0 (mínima)
+
+Por outro lado, se possuimos p+ = p- = 0.5
+
+Isso significa que a entropia é 1 (máxima)
+
+![[Pasted image 20250401094134.png]]
+
+<mark style="background: #D2B3FFA6;">Dúvida</mark>
+
+Já que a entropia mede o quão desordenados está o meu atributo, eu poderia usar variância ou desvio padrão?
+
+---
+
+-  Entropia é uma medida de aleatoriedade (IMPUREZA) de uma variável;
+-  A entropia de uma variável nominal X que pode tomar *i* valores
+
+$$
+entropia(x) = - Σ pi *log2 (pi)
+$$
+-  Entropia tem máximo se pi = pij para qualquer i diferente de j
+-  A entropia é mínima se existe um i tal que pi = 1
+-  Com isso, temos que 0 * log2 0 = 0
+
+---
+
+> ~={green}Exemplo usando entropia para o caso "joga sim e joga não"=~
+
+-  Suponha que S é uma coleção de 14 exemplos, incluindo 9 ~={blue}positivos=~ e 5 ~={red}negativos=~.
+
+	Notação: [9+, 5-]
+
+A entropia de 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
