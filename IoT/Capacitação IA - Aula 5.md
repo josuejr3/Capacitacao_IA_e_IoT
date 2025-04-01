@@ -1,7 +1,7 @@
 
 ####                                        *Árvores de Decisão - Parte 1*
 
--  Árvore de decisão
+~={cyan}Árvore de decisão=~
 
 	-  Instâncias (exemplos/dataset) são representados por pares atributos (X, y)
 	-  Fáceis de serem implementados.
@@ -27,9 +27,85 @@ Algumas características importantes das árvores são:
 -  Cada nó de decisão contém um teste de atributo;
 -  Cada ramo descendente corresponde a um possível valor deste atreibuto;
 -  Cada folha está associada a uma classe
--  Cada percurso na árvore (da raiz até a folha) corresponde a uma regra de classificação.
+-  Cada percurso na árvore (da raiz até a folha) corresponde a uma~={red} regra de classificação=~.
 - Como usamos X e Y para definir os rótulos A1 e A2 significa que é um algoritmo de ~={red}aprendizado supervisionado=~. 
--  Conjunto 
+-  A árvore lida bem com datasets que possuem algum tipo de ruído, como dados faltantes ou mal mensurados;
+-  Usados em diagnósticos médicos, diagnósticos de equipamentos e análise de creditos.
+
+~={cyan}Procedimento de Construção de uma Árvore de Decisão=~
+
+1. Escolha de Atributo;
+2. Estender a árvore adicionando um ramo para cada valor do atributo;
+3. Passar os exemplos para as folhas (tendo em conta o valor do atributo escolhido)
+4. Para cada folha
+	1. Se todos são da mesma classe, associar essa classe à folha
+	2. Senão, repetir os passos 1 a 4
+
+<mark style="background: #FF5582A6;">Obs: é possível definir uma parada para evitar o overfitting</mark>
+
+![[Pasted image 20250401085949.png]]
+
+Nesse exemplo de dataset o valor de X2 é pouco relevante, uma vez que quem define a classe (Y)  é X1, isto é, X1 tem mais peso no valor da definição da classe Y.
+
+~={cyan}Como é feita a métrica de um atributo em relação as classes? (como saber se é um bom atributo)=~
+
+Antes de mais nada...
+
+~={red}-  Uma divisão que mantêm as proporções de classes em todas as aprtições é inutil;=~
+~={green}-  Uma divisão onde em cada partição todos os exemplos são da mesma classe tem utilidade máxima.=~
+
+Na prática uma divisão dessa forma é dificil de acontecer. Porém, podemos procurar o melhor atributo que se aproxima disso.
+
+<mark style="background: #FF5582A6;">Obs: os níveis da árvore referem-se aos atributos de um dataset. ELES PODEM SE REPETIR ao longo da estrutura.</mark>
+
+![[Pasted image 20250401091643.png]]
+
+No exemplo acima, não há como definir o melhor atributo, tendo em vista que é necessário fazer o cálculo. 
+
+----
+
+~={cyan}Critérios para escolha de atributo=~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
