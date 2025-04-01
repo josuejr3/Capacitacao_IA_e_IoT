@@ -109,6 +109,8 @@ Isso significa que a entropia é 1 (máxima)
 
 - A entropia é uma medida exclusiva de IA ou ela é vista na estátistica também?
 
+- Confuso como reutilizar um atributo novamente na "regra" que define a classe.
+
 ---
 
 -  Entropia é uma medida de aleatoriedade (IMPUREZA) de uma variável;
@@ -169,6 +171,50 @@ A QUANTIDADE DE NÃO JOGA se o tempo é SOL = 3/5
 Por fim, a medida do ganho de informação é dada pela entropia das classes desejadas para Y que no caso foi a divisão em (1), subtraido da informação do tempo
 
 ![[Pasted image 20250401101759.png]]
+
+>~={green} Exemplo com cálculo de atributo Vento=~
+
+![[Pasted image 20250401102204.png]]
+
+Como o valor de ganho de informação é maior para tempo em relação ao atributo vento, então o tempo seria escolhido para ser a raiz da árvore
+
+> ~={green}Outro exemplo=~
+
+![[Pasted image 20250401102340.png]]
+
+<mark style="background: #FF5582A6;">Obs: categorizar valores de atributos (transformar de uma quantitativa para qualitativa), por exemplo, perde a precisão da informação.
+</mark>
+
+Após realizar o cálculo do nó raiz, é necessário calcular as proporções dos nós posteriroes tomando com base o "caminho".
+
+![[Pasted image 20250401103938.png]]
+
+---
+
+~={cyan}Critério Gini=~
+
+Esse critério é utilizado para substituir o valor de log na base 2 que usamos anteriormente. Ele também serve para saber o grau de aleatoriedade de uma variável.
+
+![[Pasted image 20250401104305.png]]
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
