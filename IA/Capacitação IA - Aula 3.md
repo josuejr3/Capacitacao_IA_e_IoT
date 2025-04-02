@@ -39,7 +39,95 @@ O ideal é fazer o cálculo para todas as divisões que vimos lá no dataset
 -  Todos os exemplos pertencem a mesma classe (a folha vira a classe);
 -  Todos os exemplos tem os mesmos valores dos atributos;
 -  O número de exemplos é inferior a um certo limite;
--  O mérito de todos os possíveis testes de partição dos exemplos é muito baixo.
+-  O mérito de todos os possíveis testes de partição dos exemplos é muito baixo (evita overfitting).
+
+---
+
+~={cyan}Árvore de Decisão - Algoritmo=~
+
+-  Entrada - um conjunto de exemplos;
+-  Saída - uma árvore de decisão;
+-  Função GeraÁrvore(Exs):
+	-  Se o critério_parada(Exs) = True; retorna Folha
+	-  Escolhe o atributo que maximiza o critério_divisão(Exs) (maior ganho);
+	-  Para cada partição i dos exemplos baseados n atributo escolhido: arvore = Gera_árvore(Exsi)
+	-  Retorna um nó de decisão baseado no atributo escolhido e com descendentes árvore,
+	-  Fim
+
+---
+
+~={blue}Overfitting - sobre-ajustamento=~
+
+O overfitting é basicamente quando o algoritmo fica muito ajustado para um determinado conjunto de dados. Isso faz com que ele fique com ruído.
+
+Com isso, o desempenho do algoritmo (a taxa de acertos), torna-se pior do que um mesmo algoritmo que tenha sido "menos treinado".
+
+~={red}É preferível ter uma árvore com um nível a menos do que um nível a mais com a junção do overfitting=~
+
+	- Em datasets sem ruído o numero de erros de treinamento pode ser 0. O algoritmo "decora" os dados.
+
+
+	- Já quando tem ruído, essa capacidade vira um problema e vai chegar um nível de profundidade da árvore que as decisões vão ser baseadas em pequenos conjuntos de exemplos.
+
+	- A capacidade de generalização para exemplos não utilizados no crescimento a árvore diminui.
+
+<mark style="background: #FF5582A6;">Em resumo, a árvore não irá saber lidar com uma entrada diferente do que foi usado como testes.</mark>
+
+![[Pasted image 20250402135550.png]]
+
+Com o overfitting a árvore fica muito específica para um conjunto de dados.
+
+Além do overfitting, pode ocorrer o ~={red}underfitting=~ que é uma árvore com uma taxa de erro maior, considerada uma árvore "preguiçosa".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
