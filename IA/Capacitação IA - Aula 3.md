@@ -79,6 +79,68 @@ Com o overfitting a árvore fica muito específica para um conjunto de dados.
 
 Além do overfitting, pode ocorrer o ~={red}underfitting=~ que é uma árvore com uma taxa de erro maior, considerada uma árvore "preguiçosa".
 
+<mark style="background: #D2B3FFA6;">Duvida
+</mark>
+
+Como saber o quão treinado o algoritmo está?
+
+![[Pasted image 20250402141236.png]]
+
+~={cyan}Navalha de Occam=~
+
+Partindo do pressuposto que podemos criar n árvores de decisões com os dados que possuimos, qual a melhor para se escolher? 
+
+-  Existem menos hipóteses simples do que complexas (poucos nós);
+-  Se uma hipótese simples explica os dados é pouco provável que seja coincidência;
+-  Uma hipótese complexa pode explicar os dados apenas por coincidencia.
+
+---
+
+~={blue}Formas de simplificar árvores=~
+
+As árvores podem ser simplificadas de duas maneiras, a primeira parando o crescimento dela mais cedo (pre-pruning);
+
+A segunda é construir a árvore completa e somente após isso podar ela (pós-pruning)
+
+De acordo com Quinlan (1987) *"Growing and pruning is slower but more reliable"* o que significa que ir crescendo e ir podando é mais confiável. 
+
+![[Pasted image 20250402142649.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
