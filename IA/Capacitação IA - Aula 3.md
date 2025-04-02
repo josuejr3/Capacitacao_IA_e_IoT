@@ -119,7 +119,10 @@ O pandas possui dois tipos de dados:
 
 Em relação ao scikit-learn ele aceita tanto dataframes, como também séries.
 
--  Os primeiros passos com ML podem ser realiza
+-  ~={purple}Os primeiros passos com ML podem ser realizados através do dataset "iris" que é basicamente fazer a identificação de uma flor do tipo iris a partir das medidas da petálas e cepálas;
+=~
+-  ~={purple}O dataset possui 150 mensurações, sendo 50 para cada uma das três espécies da flor;=~
+
 
 
 
