@@ -1,4 +1,4 @@
-#### ~={cyan}Árvores de Decisão - Parte II=~
+#### ~={cyan}                                         *Árvores de Decisão - Parte II=~
 
 Cálculo do Ganho de Informação para Atributos Númericos
 
@@ -105,6 +105,93 @@ A segunda é construir a árvore completa e somente após isso podar ela (pós-p
 De acordo com Quinlan (1987) *"Growing and pruning is slower but more reliable"* o que significa que ir crescendo e ir podando é mais confiável. 
 
 ![[Pasted image 20250402142649.png]]
+
+---
+
+~={cyan}Análise geral sobre bibliotecas=~
+
+Utilizaremos pandas, scikit-learn e entre outras bibliotecas
+
+O pandas possui dois tipos de dados:
+
+-  Dataframe - matriz
+-  Series - coluna ou linha do Dataframe
+
+Em relação ao scikit-learn ele aceita tanto dataframes, como também séries.
+
+-  Os primeiros passos com ML podem ser realiza
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
