@@ -75,6 +75,126 @@ O endereçamento pode ser feito de maneira estática ou dinâmica. O que é comu
 -  Quando há dispositivos finais conectados aos switchs dizemos que a configuração feita no switch é uma configuração de <mark style="background: #BBFABBA6;">PORTA DE ACESSO</mark>.
 -  A transição "de volta" ou seja dos switchs mais abaixo (que se conectam com os PCs) para o switch que está conectado ao roteador tem uma interface de transporte (com tags para cada uma das VLANs).
 
+![[Pasted image 20250403103015.png]]
+
+---
+####                                                              *~={cyan}IPv6=~*
+
+No IPv6 não temos mais apenas 32 bits para representar o endereço, mas sim 128 bits no total.
+
+![[Pasted image 20250403103736.png]]
+
+-  Nem todos os dispositivos de IoT conseguem "abarcar" endereços IPv6;
+-  Representação em formato hexadecimal;
+
+> ~={green}Exemplo=~
+
+![[Pasted image 20250403104107.png]]
+
+~={cyan}Regras de Abreviações do IPv6=~
+
+-  Omitir zeros à esquerda de qualquer seção de 16 bits;
+
+> ~={green}Exemplo=~
+
+	01AB - 1AB
+	09f0 - 9f0
+	0a00- a00
+	00ab - ab
+
+-  Dois pontos duplos pode substituir uma única sequênia contígua de um ou mais segmentos de 16 bits compostos exclusivamente por 0s.
+
+	Só podem ser usados os "::" uma única vez no endereço. 
+
+>  ~={green}Exemplo=~
+
+![[Pasted image 20250403105504.png]]
+
+-  Diferente do IPv4 o IPv6 não tem broadcast;
+-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
