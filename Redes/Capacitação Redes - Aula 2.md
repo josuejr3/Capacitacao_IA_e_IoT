@@ -23,6 +23,96 @@ IPv4 Pública - Tem a capacidade de ser roteável na internet, ou seja, todo dis
 
 O NAT não é exclusivo apenas do provedor, pode haver NAT na própria residência do usuário. O que não é viável, quanto mais tiver pior o desempenho da rede.
 
+![[Pasted image 20250403085715.png]]
+
+-  Residências atreladas ao mesmo provedor de internet possuem o mesmo endereço 192.168.0.0/24, por exemplo.
+-  A maneira que a identificação específica é feita, ou seja, como é feita a diferenciação é através do IP que fica no link de WAN, normalmente um IP do protocolo PPoE. (~={red}Exemplo de NAT=~).
+-  No provedor a um outro NAT que transforma modifica o tipo do IP.
+
+---
+
+~={blue}Maneiras de Atribuição de Endereçamento de IP=~
+
+O endereçamento pode ser feito de maneira estática ou dinâmica. O que é comum em dispositivos finais é que o IP seja atribuído de maneira dinâmica, pois é mais simples para o usuário final (para isso usa-se o protocolo BHCP).
+
+-  Endereços link local
+
+	169.254.0.0/16 ou 169.254.0.1 a 169.254.255.254 são endereços locais de link e também são conhecidos como endereços de endereçamento IP privado automático (APIPA) ou endereços auto-atribuídos.
+
+	~={red}(Gateway padrão)=~
+	
+	![[Pasted image 20250403090915.png]]
+		
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
