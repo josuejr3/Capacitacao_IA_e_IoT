@@ -50,6 +50,30 @@ O endereçamento pode ser feito de maneira estática ou dinâmica. O que é comu
 
 ---
 
+-  SWITCHES CAMADA 2
+-  VLAN (LAN VIRTUAL)
+
+	-  Cada VLAN deve ter seu próprio endereçamento ou subrede de IP;
+	
+		![[Pasted image 20250403100549.png]]
+	
+	-  A VLAN separa o domínio de broadcast;
+
+		![[Pasted image 20250403100937.png]]
+
+- Os computadores ou dispositivos estão conectados a um switch (paralelepípedo) que por sua vez se conectam a um roteador.
+
+<mark style="background: #D2B3FFA6;">Dúvida</mark>
+
+		O que é um SWITCH?
+
+		A VLAN subdivide o broadcast (todos os hosts) em grupos e ai os grupos só vão poder se comunicar entre si. Como por exemplo, acima PC1 só pode se comunicar com PC4, pois eles fazem parte da mesma VLAN. Porém, não pode se comunicar com PC6, mesmo que seja a mesma rede?
+
+	Se a VLAN não faz parte do projeto, por exemplo, e o PC1 faz uma solicitação, significa que o PC1 iria "solicitar" ou fazer uma requisição em todos os dispositivos?
+
+-  Normalmente as VLANs são configuradas nos Switchs (camada 2)
+-  Quando há dispositivos finais conectados aos switchs dizemos que a configuração feita no switch é uma configuração de <mark style="background: #BBFABBA6;">PORTA DE ACESSO</mark>.
+-  A transição "de volta" ou seja dos switchs mais abaixo (que se conectam com os PCs) para o switch que está conectado ao roteador tem uma interface de transporte (com tags para cada uma das VLANs).
 
 
 
