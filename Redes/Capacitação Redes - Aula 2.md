@@ -42,8 +42,52 @@ O endereçamento pode ser feito de maneira estática ou dinâmica. O que é comu
 	~={red}(Gateway padrão)=~
 	
 	![[Pasted image 20250403090915.png]]
-		
+
+![[Pasted image 20250403093524.png]]
+
+-  Switch (une todos os dispositivos conectados na rede local)
+-  <mark style="background: #FF5582A6;">NAT de origem e de destino</mark>
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
