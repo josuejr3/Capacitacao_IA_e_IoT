@@ -75,11 +75,37 @@ Essas duas se referem a qual local os dados vão ser processados.
 
 -  Fechadura inteligente;
 -  Lâmpada inteligente;
+-  Brinquedo;
+-  Alexa;
 
+~={blue}Certo, mas o que diferencia um sistema embarcado de um sistema de propósito geral?
+=~
+-  Sistemas Embarcadsos são para aplicações específicas, não possuem nenhum mecanismo de customização, ou então muito poucos;
 
+- Isso implica que o sistema pode ser projetado de forma que seja bem otimizado;
 
+-  Implementação
+	-  Hardware dedicado - desenvolver o próprio chip;
+	-  Dispositivo programável - uso de microprocessadores e controladores que já existem;
 
+	A escolha de como vai ser feita a implementação vai depender das seguintes características
+	-  Custo;
+	-  Tecnologia;
+	-  Flexibilidade;
+	-  Otimização de uso de recursos;
 
+	-  Microcontrolador vs Microprocessador
+		-  Custo;
+		-  Tamanho;
+		-  Poder computacional;
+		-  Recursos de software;
+		-  Consumo de Energia;
+	
+		Qual microcontrolador escolher?
+			-  Requisitos de processamento e memória
+				1. Ex1: TM4C - 80MHz, 32-bits, 32KB RAM;
+				2. Ex2: PIC12F508 - 4MHz, 8-bits, 25B RAM;
+			- Interfaces de I/O disponíveis.
 
 
 
