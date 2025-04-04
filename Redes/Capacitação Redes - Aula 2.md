@@ -111,217 +111,34 @@ No IPv6 não temos mais apenas 32 bits para representar o endereço, mas sim 128
 ![[Pasted image 20250403105504.png]]
 
 -  Diferente do IPv4 o IPv6 não tem broadcast;
--  
+-  Tipo AnyCast - que é de um para o mais próximo. (Ex: usando o servidor DNS do Google);
+	- Vários DNS do Google separados no mundo, porém ele usa o mais próximo.
 
 
+~={cyan}Composição=~
 
+![[Pasted image 20250403110011.png]]
 
+A grosso modo
 
+-  A identificação de Rede (Prefixo)
+-  Identificação do Host (ID de interface)
 
+~={blue}Unicast=~
 
+![[Pasted image 20250403110211.png]]
 
+-  Unicast global funciona como se fosse o IPv4 público (IP voltado para documentação de rede);
+	- (Ex: corte de internet de um usuário);
 
+-  Local exclusivo seria equivalente a um endereço IPv6 privado.
 
+Esquema do endereço IPv6 - Unicast Global
 
+![[Pasted image 20250403111055.png]]
 
+-  Atribuição Dinâmica para endereçamento IPv6
 
+![[Pasted image 20250403111303.png]]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
