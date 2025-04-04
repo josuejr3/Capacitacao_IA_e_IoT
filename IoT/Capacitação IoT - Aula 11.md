@@ -40,10 +40,114 @@ Na imagem acima vemos uma plataforma de middleware que é chamada de dojot. Ela 
 -  Criação de fluxos de processamento (lógica de negócio) usando Node-RED;
 -  APIs REST e MQTT para comunicação;
 -  Multi-tenant (suporte a mútplos usuários/ambientes isolados);
+-  Dojot pode ser executado na nuvem ou borda;
 
 
 ~={cyan}EDGE / FOG COMPUTING
 =~
+Essas duas se referem a qual local os dados vão ser processados.
+
+![[Pasted image 20250404094910.png]]
+
+-  Edge computing - basicamente é quando o processamento dos dados pode ser feito a partir dos dispositivos "mais próximos" fisicamente dos dispositivos finais. Não havendo a necessidade do dado chegar na nuvem, ser processado para depois retornar. Isso torna uma resposta mais rápido para os atuadores.
+
+> ~={green}Exemplo em redes 5G=~
+
+![[Pasted image 20250404095215.png]]
+
+> ~={green}Exemplos=~
+
+![[Pasted image 20250404100107.png]]
+
+<mark style="background: #D2B3FFA6;">Dúvida</mark>
+
+**Socket** TCP/UDP? 
+
+---
+
+~={cyan}Definição de Sistemas Embarcados=~
+
+-  Sistema computacional embarcado **vs** sistema de **propósito geral**
+-  Definição para leigos:
+	-  Sistemas embarcados são coisas que executam software, mas **"não são computadores"**
+
+> ~={green}Exemplos=~
+
+-  Fechadura inteligente;
+-  Lâmpada inteligente;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
