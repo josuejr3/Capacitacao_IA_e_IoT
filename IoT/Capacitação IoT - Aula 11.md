@@ -107,9 +107,27 @@ Essas duas se referem a qual local os dados vão ser processados.
 				2. Ex2: PIC12F508 - 4MHz, 8-bits, 25B RAM;
 			- Interfaces de I/O disponíveis.
 
+-  Desafios
+	-  Tentar executar tarefas críticas;
+	-  Interagem como "mundo real" por meio de sensores e atuadores;
+	-  Interface com mundo físico pode trazer desafios adicionais, como por exemplo:
+		-  Segurança;
+		-  Teste/debug;
+		-  Operação autônoma.
 
+	-  Restrição de recursos
+		-  Processamento;
+		-  Memória;
+		-  Interfaces de I/O;
 
+	-  Trade-offs (relação de compromisso / basicamente ganha em um atributo e perde em outro)
+		-  O que pode implicar uma ~={red}redução de uso de memória?=~
+		-  O que podemos implicar uma ~={red}redução no tempo de processamento?=~
 
+	-  Consumo de Energia
+		-  Alimentação por pilhas/baterias/colheita de energia
+		![[Pasted image 20250404110802.png]]
+				
 
 
 
