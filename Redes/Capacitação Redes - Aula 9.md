@@ -64,6 +64,79 @@ Comparação entre TCP e UDP
 
 ![[Pasted image 20250410084106.png]]
 
+A medida que aumentamos a frequência, nós diminuimos o comprimento de ondas.
+
+![[Pasted image 20250410085740.png]]
+
+-  Propagação no Espaço Livre de Ondas Eletromagnéticas
+
+Em uma situação que estamos transmitindo uma determinada informação de uma antena para outra, podemos calcular o poder de recebimento da antena receptora.
+
+$$
+Pr = (PtGtGr(λ)^2) / (4πR)^2
+$$
+
+-  Pr - potência de recebimento da antena 2;
+-  Pt - potência de transmissão da antena 1;
+-  Gt - ganho de transmissão da antena 1;
+-  Gr - ganho de recepção da antena 2;
+-  λ - Comprimento de onda;
+-  R - distância entre as antenas.
+
+As ondas são difundidas em "linha reta" sem a ocorrência de fenômenos como refração e reflexão.
+
+~={cyan}Fenômenos de ondas de RF=~
+
+-  Absorção
+
+É basicamente a capacidade que elemtos do ambientes, (sólidos ou líquidos), como paredes de concreto, tijolos e tanques de água tem de interromper a propagação da onda, fazendo com que ela perca energia e potência.
+
+> ~={green}Exemplo: um sinal de 2.4 GHz tem 1/6 da potência original após se propagar através de uma parede de concreto. Esse mesmo sinal, perde apenas metade da potência original depois de passar pelo material Drywall=~
+
+Tabela com exemplos de perda e atenuação de sinais
+
+![[Pasted image 20250410091740.png]]
+
+<mark style="background: #ABF7F7A6;">Lembrando que dB se refere ao ganho ou perda de potência de um sinal. (+10 dB ou -10 dB)</mark>
+
+Espalhamento
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
    
