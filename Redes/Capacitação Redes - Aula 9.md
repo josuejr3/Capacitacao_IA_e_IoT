@@ -41,8 +41,42 @@ Comparação entre TCP e UDP
 ~={cyan}Sobre as portas comuns em relação aos protocolos UDP e TCP
 =~
 -  Aqui, ao invés de endereço MAC de destino e endereço MAC de origem, chamamos de porta lógica de destino e de origem.
+-  A porta lógica junto com endereço de IP é chamada de **socket**.
 
 ![[Pasted image 20250410074830.png]]
+
+-  Para aumentar a segurança de um serviço, é comum alterarmos o valor da porta desse serviço 
+
+> ~={green}Exemplo: um dispositivo SSH configurado rodando na porta 22.50 ao invés da porta 22 padrão.=~
+
+![[Pasted image 20250410080335.png]]
+
+
+~={cyan}Camada de Aplicação=~
+
+![[Pasted image 20250410080407.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
