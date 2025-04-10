@@ -87,7 +87,7 @@ As ondas são difundidas em "linha reta" sem a ocorrência de fenômenos como re
 
 ~={cyan}Fenômenos de ondas de RF=~
 
--  Absorção
+-  ~={cyan}Absorção=~
 
 É basicamente a capacidade que elemtos do ambientes, (sólidos ou líquidos), como paredes de concreto, tijolos e tanques de água tem de interromper a propagação da onda, fazendo com que ela perca energia e potência.
 
@@ -99,7 +99,55 @@ Tabela com exemplos de perda e atenuação de sinais
 
 <mark style="background: #ABF7F7A6;">Lembrando que dB se refere ao ganho ou perda de potência de um sinal. (+10 dB ou -10 dB)</mark>
 
-Espalhamento
+- ~={cyan}Espalhamento=~
+
+O espalhamento ocorre quando o comprimento de onda do sinal eletromagnético é maior do que as dimensões do meio envolvido. 
+
+O sinal eletromagnético vai sofrer um espalhamento e isso faz com que ocorra uma degradação substancial do sinal e até mesmo causar a perda do sinal recebido.
+
+![[Pasted image 20250410092816.png]]
+
+-  ~={cyan}Reflexão=~
+
+Modificação da direção da onda, quando ela retorna ao meio original após atingir um meio com caracterísitcas diferentes.
+
+As refleões de onda podem ocorrer em situações como:
+
+-  Camadas atmosféricas (temporárias) - enlaces ponto a ponto e ponto multiponto;
+-  Obstruções - paredes, pisos e objetos - propagação indor;
+-  Solo (permanentes) - enlaces ponto a ponto e ponto multiponto.
+
+![[Pasted image 20250410093850.png]]
+
+-  ~={cyan}Multipercurso=~
+
+É o fenômeno de propagação que resulta em dois ou mais caminhos de um sinal chegando a uma antena receptora ao mesmo tempo.
+
+Em locais internos temos por exemplo: **corredores**, mesas, pisos, armários entre objetos sólidos e superficies metálicas. 
+
+Já em ambientes externos o multipercurso pode ser causado por uma estrada plana um grande copro de água, um edifício ou condições atmosféricas.
+
+<mark style="background: #ADCCFFA6;">Em resumo, várias componentes do sinal do RF chegam ao receptor através de vários caminhos.</mark>
+
+![[Pasted image 20250410094007.png]]
+
+O problema é que essas componentes chegam em tempos distintos e também com fases diferentes.
+
+~={cyan}Refração=~
+
+A refração é basicamente a curvatura de um sinal de RF ao passar por um meio com uma densidade diferente, fazendo com que a direção da onda mude. Esse fenômeno ocorre na maioria das vezes como resultado das condições atmosféricas.
+
+As três causas mais comuns de refração são:
+-  Vapor d'água;
+-  Mudanças na temperatura do ar;
+-  Mudanças na pressão do ar.
+
+![[Pasted image 20250410094847.png]]
+
+~={cyan}Difração=~
+
+A difração é a curvatura de um sinal de R
+
 
 
 
