@@ -56,6 +56,52 @@ Comparação entre TCP e UDP
 
 ![[Pasted image 20250410080407.png]]
 
+---
+
+~={cyan}Camada Física=~
+
+-  O Espectro eletromagnético
+
+![[Pasted image 20250410084106.png]]
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
