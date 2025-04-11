@@ -146,7 +146,113 @@ As três causas mais comuns de refração são:
 
 ~={cyan}Difração=~
 
-A difração é a curvatura de um sinal de R
+A difração é a curvatura de um sinal de RF em torno de um objeto (enquanto a refração é a curvatura de um sinal ao passar por um meio). A difração é a curva e a propagaão de um sinal de RF quando ele encontra uma obstrução.
+
+As condições para que o fenômeno ocorra vão depender inteiramente da forma, tamanho e material obstrutivo, assim como as caracterísitcas do sinal de RF, como polarização, fase e amplitude.
+
+Normalmente a difração ocorre quando há um bloqueio parcial do sinal de RF.
+
+![[Pasted image 20250410095243.png]]
+
+---
+
+Meios Guiados Metálicos
+
+-  Cabo de par trançado não blindado (UTP)
+![[Pasted image 20250410095902.png]]
+-  Cabo de pares Trançados blindados (STP)
+![[Pasted image 20250410095916.png]]
+-  Cabo coaxial
+![[Pasted image 20250410095932.png]]
+Esse último usado em antenas.
+
+
+![[Pasted image 20250410100038.png]]
+
+~={blue}Conectores e Pinagem=~
+
+Conectores RJ45
+
+![[Pasted image 20250410100154.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
