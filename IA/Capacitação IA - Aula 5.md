@@ -199,8 +199,6 @@ Esse critério é utilizado para substituir o valor de log na base 2 que usamos 
 
 ---
 
-Cálculos
-
 
 
 
