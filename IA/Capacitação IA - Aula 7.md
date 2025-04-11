@@ -45,7 +45,7 @@ O ideal é fazer o cálculo para todas as divisões que vimos lá no dataset
 
 ~={cyan}Árvore de Decisão - Algoritmo=~
 
--  Entrada - um conjunto de exemplos;
+-  Entrada - um conjunto de exemplos (usada para treinar a árvore);
 -  Saída - uma árvore de decisão;
 -  Função GeraÁrvore(Exs):
 	-  Se o critério_parada(Exs) = True; retorna Folha
