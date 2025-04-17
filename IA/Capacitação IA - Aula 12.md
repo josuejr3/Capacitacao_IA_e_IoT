@@ -100,7 +100,8 @@ O KNN acaba sendo uma forma de "ranquear" o top cinco que foi discutido anterior
 -  Ideia central é armazenar todo os exemplos de treinamento
 -  Calcular as distâncias de atributos para cada exemplo e comparar com o teste
 -  Não existe um algoritmo de treinamento, os valores são apenas guardados
-- 
+-  Após a realização dos cálculos e a definição dos 5 primeiros vizinhos, por exemplo (5NN), a classe que maior aparece será considerada o resultado.
+-  Em problemas de classificação usamos a frequência dos cinco viznhos mais próximos, em regressão usamos a média entre eles.
 
 
 
