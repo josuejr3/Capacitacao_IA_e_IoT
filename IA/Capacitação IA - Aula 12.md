@@ -103,6 +103,51 @@ O KNN acaba sendo uma forma de "ranquear" o top cinco que foi discutido anterior
 -  Após a realização dos cálculos e a definição dos 5 primeiros vizinhos, por exemplo (5NN), a classe que maior aparece será considerada o resultado.
 -  Em problemas de classificação usamos a frequência dos cinco viznhos mais próximos, em regressão usamos a média entre eles.
 
+O melhor número de KNN a ser escolhido deve ser obtido através de testes.
+
+![[Pasted image 20250417191422.png]]
+
+
+~={cyan}Distância Euclidiana Normalizada=~
+
+-  Normalização é recomendada para evitar problemas de maior influência de um atributo em relação aos outros (~={red}PORÉM=~, não a garantia de que vai resolver o problema, as vezes é melhor utilizar a normal);
+-  A normalização é feita por coluna (com os maiores e menores valores);
+-  O range é basicamente a diferença entre o maior valor da coluna e o menor.
+
+	A distância euclidiana será dada pela fórmula abaixo
+	
+	![[Pasted image 20250417191632.png]]
+	
+<mark style="background: #D2B3FFA6;">Eu posso usar vários KNNs e comparar entre eles para ter certeza do valor que estou testando?</mark>
+
+
+~={cyan}KNN com peso pela distância
+=~
+-  Nesse caso, quanto maior a distância dos vizinhos, menor é o peso
+-  Quanto menor a distância maior será o peso.
+-  Para problemas de *~={red}classificação=~* soma-se todos os pesos por classe, a classe com maior somatório é atribuída
+-  Para problemas de *~={red}regressão=~* soma-se o produto dos *~={red}pesos x valores=~*.
+
+E o peso será dado pelo inverso da distância 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
