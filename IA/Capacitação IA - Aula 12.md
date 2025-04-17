@@ -52,7 +52,7 @@ Essa distânncia é basicamente a distância entre dois pontos que estudamos em 
 
 ![[Pasted image 20250417175210.png]]
 
-Nesse exemplo, vamos identificar em qual categoria de Y o caso de teste vai se encaixar.
+Nesse exemplo, vamos identificar em qual categoria de Y o caso de teste vai se encaixar. (Xq é uma linha do dataset de testes).
 
 ~={red}(Lembrando que isso é para atributos numéricos)=~
 
@@ -69,3 +69,68 @@ Após os cálculos temos os seguintes resultados
 	Para 5: sqrt(2,0 - 1,3)² + (2,1 - 2,5)² = 0,81
 
 As distâncias obtidas representam o *Grau de similaridade do Xq (caso de teste)* com os casos de treinamento, quanto menor o valor mais próximo e parecido o Xq está dos casos de treinamento.
+
+
+-  Como ficaria a classificação quanto aos valores de K para os NN?
+
+1.  Para 1-NN (A primeira menor distância) - Vermelho (0.50)
+2.  Para 2-NN (A segunda menor distância) - Vermelho (0.51)
+3.  Para 3-NN (A terceira menor distância) - "Azzul" (0.58), porém, como a maioria deu vermelho, então classificamos como Vermelho.
+
+E assim por diante. Lembrando que é importante sempre que K > 1 considerar todos os valores de Y.
+
+Ou seja, para 1 NN vejo o valor com a menor distância, para 2 NN vejo os dois valores com menor distância e assim por diante...
+
+![[Pasted image 20250417180932.png]]
+
+<mark style="background: #D2B3FFA6;">E se a quantidade de vermelhos e azuis forem par, como eu escolho?</mark>
+
+<mark style="background: #D2B3FFA6;">A depender do tamanho do dataset, eu poderia ignorar?</mark>
+
+-  Uma das formas de resolver o problema é quando uma base for binária usar um número ímpar do K.
+-  Porém, uma base com três classes, como a íris usar o K ímpar não resolve;
+-  Quando isso ocorre, pode ser necessário escolher um dos dois, com 50% de chance de acertar.
+
+O KNN acaba sendo uma forma de "ranquear" o top cinco que foi discutido anteriormente.
+
+---
+
+~={cyan}K-Nearest Neighbor=~
+
+-  Ideia central é armazenar todo os exemplos de treinamento
+-  Calcular as distâncias de atributos para cada exemplo e comparar com o teste
+-  Não existe um algoritmo de treinamento, os valores são apenas guardados
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
