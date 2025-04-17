@@ -31,3 +31,41 @@ O aprendizado baseado em instâncias constrói uma aproximação diferente da fu
 -  Sempre as distâncias são calculadas a cada vez que o algoritmo é testado (cálculos repetitivos);
 -  Os cálculos de distância usam todos os atributos.
 
+---
+
+~={cyan}Distâncias=~
+
+
+-  Distância Euclidiana
+
+Dado um padrão Xq descrito pelo seguinte vetor de características (a1(Xq), a2(Xq), a3(Xq),..., aN(Xq))
+
+E sabendo que aR(Xq) representa o r-ésimo atributo do padrão Xq
+
+A distância entre os dois padrões xI e xJ é dada por 
+
+![[Pasted image 20250417173807.png]]
+
+Essa distânncia é basicamente a distância entre dois pontos que estudamos em algebra vetorial e geometria análitica.
+
+~={green}Exemplo=~
+
+![[Pasted image 20250417175210.png]]
+
+Nesse exemplo, vamos identificar em qual categoria de Y o caso de teste vai se encaixar.
+
+~={red}(Lembrando que isso é para atributos numéricos)=~
+
+-  Inicialmente deve ser feito o cálculo de distâncias do meu Xq para cada um dos cinco dados presentes na base de treinamento.
+
+-  Os cálculos vão ser feitos seguindo a lógica X1 com X1, X2 com X2,... Xn com Xn
+
+Após os cálculos temos os seguintes resultados 
+
+	Para 1: sqrt(1,5 - 1,3)² + (3,2 - 2,5)² = 0,73
+	Para 2: sqrt(1,2 - 1,3)² + (3,0 - 2,5)² = 0,51
+	Para 3: sqrt(0,8 - 1,3)² + (2,8 - 2,5)² = 0,58
+	Para 4: sqrt(1,0 - 1,3)² + (2,9 - 2,5)² = 0,50
+	Para 5: sqrt(2,0 - 1,3)² + (2,1 - 2,5)² = 0,81
+
+As distâncias obtidas representam o *Grau de similaridade do Xq (caso de teste)* com os casos de treinamento, quanto menor o valor mais próximo e parecido o Xq está dos casos de treinamento.
