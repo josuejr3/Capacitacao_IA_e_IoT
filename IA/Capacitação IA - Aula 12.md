@@ -15,7 +15,7 @@ Nesse caso, para árvores de decisão uma vez que a árvore esta construída o c
 ~={blue}*Basicamente, os algoritmos de KNN pegam uma entrada (valor de teste) e comparam com os valores de treinamento*=~
 
 
-~={green}Exemplo=~
+> ~={green}Exemplo=~
 
 ~={green}Situação de caso em banco, um novo cliente chega para se cadastrar e ele será comparado com todos os que já estão cadastrados para saber qual será o perfil dele.
 
@@ -48,7 +48,7 @@ A distância entre os dois padrões xI e xJ é dada por
 
 Essa distânncia é basicamente a distância entre dois pontos que estudamos em algebra vetorial e geometria análitica.
 
-~={green}Exemplo=~
+> ~={green}Exemplo=~
 
 ![[Pasted image 20250417175210.png]]
 
@@ -126,15 +126,28 @@ O melhor número de KNN a ser escolhido deve ser obtido através de testes.
 -  Nesse caso, quanto maior a distância dos vizinhos, menor é o peso
 -  Quanto menor a distância maior será o peso.
 -  Para problemas de *~={red}classificação=~* soma-se todos os pesos por classe, a classe com maior somatório é atribuída
--  Para problemas de *~={red}regressão=~* soma-se o produto dos *~={red}pesos x valores=~*.
+-  Para problemas de *~={red}regressão=~* soma-se o produto dos *~={red}pesos x valores=~* (média ponderada).
 
 E o peso será dado pelo inverso da distância 
 
+<mark style="background: #FF5582A6;">Observações em relação ao KNN</mark>
+
+-  O algoritmo de K-NN com distância ponderada é bom para dados ruidosos;
+-  Efetivo em grandes quantidades de dados de treinamento;
+-  K-NN usam todos os atributos, ao contrário de árvores de decisão.
+
+Existem outras distâncias que podem ser utilizadas para KNNs
 
 
+~={cyan}Aprendizado Lazy e Eager=~
 
+-  Lazy - preguiçoso
 
+Espera por uma consulta antes de generelizar e um exemplo de algoritmo é o k-NN
 
+-  Eager - guloso
+
+Algoritmo que generaliza antes de ver a consulta, como exemplo temos os algoritmos de redes neurais, árvores e Naive Bayes.
 
 
 
