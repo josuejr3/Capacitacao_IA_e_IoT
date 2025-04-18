@@ -66,7 +66,76 @@ O teorema de Shannon nos informa que a capacidade máxima de transmissão de um 
 
 ~={blue}eMTC=~
 -  Caracterísiticas baseadas em LTE;
-- 
+-  Baixa potência.
+
+ >~={green}Exemplo com algumas outras características dos protocolos de rede de comunicação sem fio com longo alcance.
+
+![[Pasted image 20250418170036.png]]
+
+~={cyan}IEEE 802.15.4=~
+
+Diferente das pilhas que vimos antes, TCP/IP e OSI o ZigBee possui sua pilha própria, que pode ser encontrada a partir do IEEE 802.15.4
+
+-  IEEE 802.15.4 é uma tecnologia de acesso sem fio paraa dispositivos de baixo custo e baixa taxa de dados que são alimentados ou funcionam por meio de baterias;
+
+-  Várias pilhas de comunicação de rede utilizam essa tecnologia;
+
+-  Essa tecnologia é encontrada em: automação residencial e predial, redes automotivas, redes de sensores sem fio industriais, brinquedos interativos e controles remotos.
+
+-  O IEEE 802.15.4 tem pontos negativos em torn da confiabiliade e latência devido o algoritmo CSMA/CA. 
+
+-  O CSMA/CA é um método de acesso em que o dispositivo "escuta" para garantir que nenum outro dispositivo seja transmitido antes de iniciar sua própria transmissão. 
+
+~={cyan}IEEE 802.15.4 - PHY (câmada física)=~
+
+<mark style="background: #D2B3FFA6;">Canais?</mark>
+
+-  Taxa de transmissão de dados de 250 kbps, 100 kbps, 40 kbps e 20 kbps;
+-  Define 27 canais
+	-  16 canais de banda de 2450 MHz;
+	-  30 canais de banda de 915 MHz;
+	-  3 canais de banda de 868 MHz
+-  Pode usar DSSS quando está operando em baixa frequência 868/91 MHz com uma modulação de BPSK ou O-QPSK;
+-  Pode usar PSSS (Parallel Sequence Spread Spectrum) quando opera em baias frequências com a modulação BPSK ou ASK;
+- Utiliza DSSS quando opera em frequencia de 2450 MHz com modulação de O-QPSK.
+
+> ~={green}Exemplos: rede de sensores usam poucos bits para fazer um acionamento de sensor por exemplo=~
+
+O IEEE 802.15.4 da base para operação de diversas tecnologias de comunicação
+
+-  ZigBee;
+-  6LoWPAN;
+-  ZigBee IP;
+-  ISA100.11A;
+-  WirelessHART;
+-  Thread.
+
+---
+
+~={cyan}ZigBee=~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
