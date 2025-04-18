@@ -114,6 +114,50 @@ O IEEE 802.15.4 da base para operação de diversas tecnologias de comunicação
 
 ~={cyan}ZigBee=~
 
+-  O nome é basicamente uma referência a movimentação de abelhas;
+-  Não foi lançado com um padrão típico como uma RFC;
+-  A ZigBee Alliance é um grupo de indústrias responsável por certificar a interoperabilidade entre fornecedores e é basicamente quem desenvolve o ZigBee para ser uma forma de solução de IoT.
+	- A ZigBee Alliance tem como objetivo definir camadas de software de rede, segurança e aplicação;
+	- Fornecer testes de interoperabilidade e conformidade;
+	- Promover a marca ZigBee globalmente para aumentar a difusão no mercado;
+	- Gerenciar a evolução da tecnologia.
+
+- Soluções ZigBee são voltadas para objetos e sensores inteligentes que possuem baixa largura de banda e baixa necessidade de energia. 
+- O ZigBee deve funcionar, interoperar, mesmo que fornecedores diferentes possam fabricá-los.
+
+	Pilha ZigBee
+
+![[Pasted image 20250418173846.png]]
+
+Lembrando que MAC Layer é a camda de transporte de acesso ao meio.
+
+~={orange}Redes ZigBee=~
+
+-  Coordenador (ZC) - inicia e controla a rede, é a entidade mais importante
+-  Roteador (ZR) - dispositivos que estendem a cobertura da rede, contornam obstacúlos e podem se conectar ao coordenador ou outros roteadores.
+-  Dispositivos Finais (ZED) - recebem ou enviam mensagens, porém não conseguem executar alguma operação de roteamento. Eles devem estar conectados ao coordenador ou roteador.
+
+![[Pasted image 20250418175131.png]]
+
+![[Pasted image 20250418175342.png]]
+
+![[Pasted image 20250418175534.png]]
+
+![[Pasted image 20250418175654.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
