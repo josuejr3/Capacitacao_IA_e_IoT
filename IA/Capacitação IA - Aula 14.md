@@ -45,11 +45,30 @@ O VDM também serve para distância entre dados categóricos. Ele serve para des
 ![[Pasted image 20250418145028.png]]
 
 -  Não há garantia que a distância VDM seja melhor do que a de Hamming para o caso acima.
+-  O VDM pode ser aplicado a dados numéricos, porém, o atributo perde a precisão.
+		Porém, o VDM para atributos numéricos pode criar um número de categórias muito grandes
 
+	Caso mesmo assim ainda queira utilizar o VDM para dados numéricos será necessário discretizar, para isso basta seguir o procedimento abaixo.
 
+![[Pasted image 20250418150710.png]]
 
+~={cyan}Dados Categóricos - Python=~
 
+-  A maioria dos algoritmos trabalham com dados numéricos;
+-  Existem diversas formas de codificar categóricos em numéricos.
 
+	~={blue}One-Hot Encoding - Features (atributos);=~
+	~={blue}Integer Encoding - Target (classes).=~
+
+<mark style="background: #FF5582A6;">OBS: Não usar INTEGER ENCODING COM FEATURES !!!</mark>
+
+![[Pasted image 20250418152350.png]]
+
+~={cyan}One-Hot Encoding 
+=~
+Cada valor categórico daquela característica ela se tornará uma coluna
+
+![[Pasted image 20250418152532.png]]
 
 
 
