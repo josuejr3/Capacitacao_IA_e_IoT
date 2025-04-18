@@ -51,12 +51,23 @@ A parte digital em sistemas embarcados opera por meio de dois níveis de tensão
 
 A comunicação entre os componentes ocorre pela ativação de sinais que se propagam pelas trilhas de PCB.
 
-	Os sinais podem ser de dados, endereçamento e controle e alguns deles podem ativar em nível baio como por exemplo: *RST, RST/ e (RST nivel baixo).
+	Os sinais podem ser de dados, endereçamento e controle e alguns deles podem ativar em nível baio como por exemplo: RST/.
 
 ![[Pasted image 20250417233145.png]]
 
+Em relação aos sinais temos o seguintes
 
+-  Output - ativa um sinal;
+-  Input - lê o estado atual de um sinal;
+-  Um sinal que não é controlado por uma saída possui **estado não definido (floating)**
 
+~={red}O que acontece se um mesmo sinal é controlado por duas saída?=~
+	Ocorre um curto
+
+Em relação a memória, sistemas embarcados não possuem memória secundária (ex: disco)
+o código fica em memória ROM ou Flash
+
+	Memória Flash a leitura é rápida, mas a escrita é lenta.
 
 
 
