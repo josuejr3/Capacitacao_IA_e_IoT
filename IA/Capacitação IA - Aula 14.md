@@ -24,3 +24,59 @@ Paraos dados categóricos ou é necessário buscar distâncias específicas para
 
 A distância de Hamming é um tipo de distância que pode ser usada para dados categóricos.
 
+![[Pasted image 20250418143113.png]]
+
+A distância de Hamming consiste em verificar se os atributos de treinamento são iguais aos de teste.
+
+> ~={green}Exemplo=~
+
+Um dataset de treinamento e de teste com cinco colunas categóricas. X1, X2, X3, X4 e X5. 
+
+Se um atributo X1 do conjunto de treinamento for igual ao X1 do de teste, então dizemos que para aquele atributo a distância é de 0. 
+
+Fazemos isso para todos os atributos categóricos e ao final somamos tudo. Sendo assim, se apenas X1, X3 e X5 forem iguais nos dois datasets. Dizemos que o dataset de teste tem 3 atributos iguais.
+
+~={blue}VDM - Value Difference Metric=~
+
+O VDM também serve para distância entre dados categóricos. Ele serve para descobrir quando dois valores tem distribuição igual entre as classes e geralmente é mais precisa que a distância de Hamming. 
+
+![[Pasted image 20250418144145.png]]
+
+![[Pasted image 20250418145028.png]]
+
+-  Não há garantia que a distância VDM seja melhor do que a de Hamming para o caso acima.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
