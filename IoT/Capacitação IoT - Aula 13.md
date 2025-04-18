@@ -32,3 +32,58 @@ Ainda sobre trade-offs, é importante se atentar ao uso de interrupções. Elas 
 
 	![[Pasted image 20250417230202.png]]
 
+~={cyan}Hardware para Eng. de Software Embarcado=~
+
+-  Escrever software de baixo nível requer conhecimento de hardware;
+-  Necessidade de saber ler um esquemático (esquema eletrônicos e datasheets);
+-  Saber estudar novos processadores.
+
+~={blue}Conceitos=~
+
+A parte digital em sistemas embarcados opera por meio de dois níveis de tensão, que são os números binários 1 e 0 que conhecemos. Essas tensões podem ser:
+
+0V e 5V ou então 0V e 3.3V
+
+-  Nível baixo - GROUND (GND) ou Vss
+-  Nível alto - VCC ou Vdd ou 3V3 etc
+
+![[Pasted image 20250417232625.png]]
+
+A comunicação entre os componentes ocorre pela ativação de sinais que se propagam pelas trilhas de PCB.
+
+	Os sinais podem ser de dados, endereçamento e controle e alguns deles podem ativar em nível baio como por exemplo: *RST, RST/ e (RST nivel baixo).
+
+![[Pasted image 20250417233145.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
