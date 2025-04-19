@@ -48,11 +48,47 @@ Dependendo de como é feita a inclusão de novos dispositivos na rede esse tipo 
 
 ~={cyan}Formação de uma Rede ZigBee=~
 
+-  O ZigBee tem suas camadas base (física e de controle de acesso ao meio) com o IEEE 802.15.4. O gerenciamento de dispositivos da rede, a escolha do canal de comunicação com menor ruído, o melhor caminho para tráfego de dados e a distribuição de endereços dinÂmicos da rede são características do padrão ZigBee
 
+-  A rede de trabalho dos dispositivos ZigBee é PAN, (ou seja, personal area network ?). Cada rede formada possui um endereço específico chamado PAN ID, que é o meio de diferenciar as redes formadas por diversos dispositivos coordenadores. Esse endereço deve ser armazenado em cada dispositivo ZigBee ao associar à rede especifica. 
 
+-  Para que haja uma PAN, o coordenador realiza um conjunto de leituras com intenção inicial de procurar um endereço e um canal de frequência disponível para a comunicação. Para isso verifica-se o nível de energia de cada canal testado (Energy scan). Se o nível de um local for alto, esse canal entra na lista de memória de canal disponível no coordenador. 
 
+-  Associação da PAN com o coordenador.
 
+-  Cada rede ZigBee possui um coordenador.
 
+~={cyan}Modos de Operação de Dispositivos ZigBee
+=~
+Basicamente os modos de operação se referem ao consumo de energia eleétrica que o dispositivo pode gastar em seus diferentes modos de trabalhos. 
+
+O padrão ZigBee suporta os seguintes modos:
+
+-  Modo Inativo
+
+É quando o dispositivo não recebe e nem transmite dados. O dispositivo está em processo de verificação de dados válidos vindos da antena. Ele sai desse modo para um desses outros: Transmissão, Recepção, Sono ou Comando
+
+-  Modo de Recepção
+
+Quando os dados estão pronto para transmissão são coletados da antena do dispositivo. Nesse modo, se um dado é válido, é recebido e vai para o *buffer* de transmissão serial.
+
+-  Modo de Comando;
+
+Quando a sequência de dados de comando é iniciada. Nesse modo, para modificar ou ler os parâmetros do módulo de RF ele deve ficar em modo comando. Ao entrar nesse modo, os dados são recebidos e interpretados como linhas de comando.
+
+-  Modo Sono;
+
+Quando são dispositivos finais (basicamente o sensor que é um end device, precisa de uma validação muito rápida para fazer algo no ambiente). É quando o dispositivo possui menor consumo de energia, na classe de *redes de curto alcance*.
+
+-  Modo de Transmissão
+
+Quando dados seriais oriundos do *buffer* estão prontos a serem empacotados. O endereçamento do destino do pacote determina qual módulo na rede receberá o pacote. 
+
+	Nesse caso, o dispositivo assegura-se que o 
+
+-  Modo Ativo.
+
+Não é um modo específico, é um conjunto de modos.
 
 
 
