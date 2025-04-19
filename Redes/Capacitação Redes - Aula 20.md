@@ -138,6 +138,51 @@ Em relação a segurança o coordenador ZigBee pode iniciar a rede com uma chave
 
 A coexistência é a capacidade de dispositivos sem fio de diferentes tecnologias poderem operar próximos uns dos outros sem interferências na mesma faixa de frequência. O padrão ZigBee pode trabalhar em banda de frequência de 2.4GHz, assim como Wi-Fi, Bluetooth e alguns telefones sem fio.
 
+-  O protocolo ZigBee é destinado a operar em uma **faixa de frequência que não necessita de licenciamento.** 
+
+-  Com isso, ele deveria sofrer interferência de dispositivos que operam na mesma faixa. Porém, com tecnicas e ~={orange}CSMA/CA=~ e ~={orange}Espalhamento Espectral=~ é possível aumentar as chances de coexistência.
+
+~={cyan}Endereçamento=~
+
+-  Endereço de 64 - é o endereço fixo de identificação do módulo, no momento da sua fabricação. Ele é único para cada dispositivo e não possuem o mesmo valor.
+
+-  Endereço de 16 - é o endereço dinâmico que o módulo recebe ao ingressar em uma PAN. Ele é  endereço de rede, sendo fornecido pelo coordenador ou roteador.
+
+![[Pasted image 20250419140116.png]]
+
+
+~={cyan}Roteamento de Dados=~
+
+-  Algumas transmissões unicast necessitam utilizar roteamento de mensagens, quando a distância de um dispositivo não for suficiente para se conectar com um coordenador;
+-  Os dispositivos finais não utilizam os protocolos de roteamento por serem RFD. Eles enviam aos pai
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
