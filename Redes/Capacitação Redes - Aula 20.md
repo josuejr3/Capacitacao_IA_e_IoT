@@ -107,6 +107,48 @@ Os coordenadores ou roteadores respondem a solicitação enviando um quadro com 
 A essas etapas, chamamos de PAN Scan. Após esses procedimentos, o coordenacor tenta se conectar a um canal de frequência e endereço não utilizados, formando assim uma rede de trabalho. O coordenador se apodera do mesmo canal e endereço.
 
 
+- Existe apenas um dispositivo coordenador em uma rede formada. ~={red}NÃO EXISTEM DOIS DISPOSITIVOS COORDENADORES COM MESMA PAN ID.=~
+
+- A rede ZigBee é formada quando o coordenador seleciona um canal de comunicação e a PAN ID. Possibilitando os roteadores e dispositivos finais se conectarem a rede.
+
+- Todos os dispositivos recebem um endereço de 16 bits ao associar a PAN, o endereço do coordenador é o 00h.
+
+- Fluxo de conexão: 
+
+	-  Coordenador inicia uma PAN
+	
+	-  Roteadores ou dispositivos finais fazem uma leitura de PAN para encontrar as mais próximas disponíveis.
+	
+	-  Após a leitura, o dispositivo final ou roteador analisa uma lista de PANs disponíveis para associar.
+
+~={red}Obs: os dispositivos finais só podem se associar apenas à um único módulo pai (FFD) ou coordenador.
+=~
+~={blue}Como é feito a conexão de outros dispositivos?=~
+
+Coordenadores ou roteadores vão permitir o acesso de dispositivos à rede. O controle de acesso vai depender se o acesso é permitido e se o número de dispositivos filhos já chegou ao limite máximo.
+
+~={blue}Segurança=~
+
+Em relação a segurança o coordenador ZigBee pode iniciar a rede com uma chave **criptografada** de 128 bits. Somente dispositivos que possuem a mesma chave podem ter acesso à rede formada. A chave pode ser adquirida em ~={orange}pré-configuração=~.
+
+
+![[Pasted image 20250419133042.png]]
+
+~={cyan}Coexistência ZigBee=~
+
+A coexistência é a capacidade de dispositivos sem fio de diferentes tecnologias poderem operar próximos uns dos outros sem interferências na mesma faixa de frequência. O padrão ZigBee pode trabalhar em banda de frequência de 2.4GHz, assim como Wi-Fi, Bluetooth e alguns telefones sem fio.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
