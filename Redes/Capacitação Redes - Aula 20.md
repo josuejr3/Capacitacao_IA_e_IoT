@@ -84,13 +84,27 @@ Quando são dispositivos finais (basicamente o sensor que é um end device, prec
 
 Quando dados seriais oriundos do *buffer* estão prontos a serem empacotados. O endereçamento do destino do pacote determina qual módulo na rede receberá o pacote. 
 
-	Nesse caso, o dispositivo assegura-se que o 
+	Nesse caso, o dispositivo assegura-se que o módulo que recebera os dados já são conhecidos e se tiver tudo ok, os dados vão ser enviados.
 
+	O dispositivo verifica o endereço de 16 bits, se não for conhecido ele vai entrar em estado de busca de endereço na rede.
+	Se a rota não for conhecida ele entra em estado de busca de rota.
+	Se nenhum dos dois for reconhecidos, a comunicação não é estabelecida e o pacote é descartado.
+
+~={red}Ainda em relação a transmissão, uma mensagem é enviada ao transmissor pela mesma rota que o dado trafegou. A função é basicamente informar que o dado chegou com sucesso. Se a mensagem não chegar no transmissor, o pacote é retransmitido.
+=~
 -  Modo Ativo.
 
-Não é um modo específico, é um conjunto de modos.
+Não é um modo específico, é um conjunto de modos, ou seja, é quando o dispositivo está em modo Recepção, Comando ou Transmissão.
 
+![[Pasted image 20250419124830.png]]
 
+~={cyan}Formação de uma Rede ZigBee=~
+
+Ao verificar a energia dos canais testados, o coordenador verifica se os canais habilitados na memória estão sendo usados por outro coordenador. Para essa verificação ele envia um quadro de broadcast, solicitando os canais e endereços que estão em uso em uma possível rede de trabalho.
+
+Os coordenadores ou roteadores respondem a solicitação enviando um quadro com o canl e o endereço já usados na rede de trabalho e se há dispositivos para associar a rede de trabalho em formação.
+
+A essas etapas, chamamos de PAN Scan. Após esses procedimentos, o coordenacor tenta se conectar a um canal de frequência e endereço não utilizados, formando assim uma rede de trabalho. O coordenador se apodera do mesmo canal e endereço.
 
 
 
