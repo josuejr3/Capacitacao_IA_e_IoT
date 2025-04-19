@@ -154,7 +154,82 @@ A coexistência é a capacidade de dispositivos sem fio de diferentes tecnologia
 ~={cyan}Roteamento de Dados=~
 
 -  Algumas transmissões unicast necessitam utilizar roteamento de mensagens, quando a distância de um dispositivo não for suficiente para se conectar com um coordenador;
--  Os dispositivos finais não utilizam os protocolos de roteamento por serem RFD. Eles enviam aos pai
+-  Os dispositivos finais não utilizam os protocolos de roteamento por serem RFD. Eles enviam aos pais, em transmissão unicast e permitem que eles roteiem os pacotes de dados.
+
+Tendo isso em vista, há três técnicas de roteamento.
+
+![[Pasted image 20250419140813.png]]
+
+![[Pasted image 20250419141748.png]]
+
+![[Pasted image 20250419141941.png]]
+
+![[Pasted image 20250419142238.png]]
+
+![[Pasted image 20250419142559.png]]
+
+![[Pasted image 20250419142822.png]]
+
+![[Pasted image 20250419143204.png]]
+
+![[Pasted image 20250419143223.png]]
+![[Pasted image 20250419143309.png]]
+
+![[Pasted image 20250419143504.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
