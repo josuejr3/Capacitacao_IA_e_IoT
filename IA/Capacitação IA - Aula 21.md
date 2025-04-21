@@ -75,18 +75,49 @@ No exemplo da base de dados íris, ela possui 4 colunas, ou seja, quatro atribut
 
 <mark style="background: #D2B3FFA6;">Dúvida: por que os pesos mudam em neurônios de uma mesma camada? eles podem ser iguais?</mark>
 
-![[Pasted image 20250421121433.png]]
+![[Pasted image 20250421121546.png]]
 
-O u11 pode ser aplicado em uma função de ativação, (função linear), ou poder ser aplicado em uma função de ativ
+-  u11 pode ser aplicado em uma função de ativação, (função linear), ou poder ser aplicado em uma função de ativação complexa.
+-  O mesmo ocorre para u12.
 
+![[Pasted image 20250421121723.png]]
 
+- O cálculo é feito até chegar a última camada.
 
+##### <span style="color:rgb(0, 255, 64)">Funções de Ativação</span>
 
+-  Processa o conjunto de entradas recebidas e o transforma em estado de ativação;
+-  Funções de ativação típicas envolvem:
+	-  Adições;
+	-  Comparações;
+	-  Transformações matemáticas.
 
+-  Atualização 
+	-  Síncrona (mais comum);
+	-  Assíncrona.
 
+-  Funções de ativação
+	-  a(t + 1) = u(t) - linear;
+	-  a(t + 1) = 0, se u(t) < teta e 1 se u(t) > ou = teta- threshold ou limiar;
+	-  a(t + 1) = 1/(1 + e^(-lambda * u(t))) - sigmoid logística;
+	-  a(t + 1) = (1 - e^(-lambda * u(t))) / (1 + e^(-lambda * u(t))) - tangente hiperbólica
 
+<mark style="background: #FF5582A6;">Obs: normamente o lambda é 1.</mark>
 
+![[Pasted image 20250421122353.png]]
 
+![[Pasted image 20250421123058.png]]
+
+-  Cada neurônio vai ser um tipo de curva dessa, uma "curvazinha";
+
+##### <span style="color:rgb(0, 255, 64)">Função de saída
+</span>
+
+-  Transforma o estado de ativação de uma unidade em seu sinal de saída
+	-  y(i) (t) = f(i)(a, (t))
+- Geralmente é uma ~={red}f~={red}ução identidade - f(x) = x=~=~
+- Normalmente os sinais de entrada e saída de uma RNA são números reais e tipicamente entre -1 e +1 ou 0 e 1.
+- Saídas soft e hard.
 
 
 
