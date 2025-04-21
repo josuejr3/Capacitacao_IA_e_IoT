@@ -117,7 +117,54 @@ No exemplo da base de dados íris, ela possui 4 colunas, ou seja, quatro atribut
 	-  y(i) (t) = f(i)(a, (t))
 - Geralmente é uma ~={red}f~={red}ução identidade - f(x) = x=~=~
 - Normalmente os sinais de entrada e saída de uma RNA são números reais e tipicamente entre -1 e +1 ou 0 e 1.
-- Saídas soft e hard.
+- Saídas soft é quando a rede neural informa um valor "quebrado" e precisamos arredondar. Já o hard é quando ela entrega o valor -1, +1 ou 0, em resumo a hard é quando arredondamos.
+
+##### <span style="color:rgb(0, 255, 64)">Conexões</span>
+
+-  Definem como os neurônios estão interligados
+	-  Nós são conectados entre si através de conexões específicas;
+
+-  Codificam *~={green}conhcimento da rede=~*
+	-  Uma conexão geralmente tem um valor de ponderamento ou *peso* associado à ela.
+
+-  Tipos de conexões (w(ik)(t))
+	-  Excitatória w(ik)(t)  > 0;
+	-  Inibitória w(ik)(t) < 0;
+	-  Conexão inexistente w(ik)(t) = 0.
+
+- Número de camadas
+	-  Uma camada, ex: Perceptron e Adaline;
+	-  Multi-camadas, ex: MLP;
+		-  Completamente conectada (normalmente é a que trabalhamos);
+		-  Parcialmente conectada;
+		-  Localmente conectada
+
+Basicamente em MLPs completamente conectadas cada neurônio da camada anterior se conecta com cada neurônio da camada posterior.
+
+![[Pasted image 20250421125435.png]]
+
+As parcialmente conectadas, nem todo neurônio da camada anterior se comunica com o da posterior.
+
+![[Pasted image 20250421125509.png]]
+
+Já as redes neurais localmente conectadas, basicamente apenas um grupo específico, se conecta aos neurônios da camada posterior.
+
+![[Pasted image 20250421125552.png]]
+
+##### <span style="color:rgb(0, 255, 64)">Tipos de Arranjos de Conexões</span>
+
+-  Redes feedforword
+	-  Não existem loops de conexões, o fluxo é unidirecional da entrada até a saída;
+-  Redes recorrentes
+	-  Conexões apresentam loops, ou seja, o sinal chega  a saída e em algum momento ele retorna para a entrada;
+	-  Mias utilizadas em sistemas dinâmicos.
+
+![[Pasted image 20250421130115.png]]
+
+
+
+
+
 
 
 
