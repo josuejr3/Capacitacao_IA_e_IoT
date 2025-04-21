@@ -161,12 +161,23 @@ Já as redes neurais localmente conectadas, basicamente apenas um grupo específ
 
 ![[Pasted image 20250421130115.png]]
 
+![[Pasted image 20250421132913.png]]
 
+##### <span style="color:rgb(0, 255, 64)">Dataset</span>
 
+-  Os dados devem ser numéricos;
+-  Não podem ter dados faltantes;
+-  Conversão ~={red}One-Hot Encoder=~ para os atributos categóricos.
 
+-  Estimativa de valores ausentes
+	-  Média de todos os valores do mesmo campo;
+	-  Média entre anterior e posterior;
+	-  Criação de um novo valor.
+-  Normalização de valores numéricos
+	-  Normalizar cada campo individualmente;
+	-  Assegurar que todos os valores de um dado campo estejam dentro de um intervalo.
 
-
-
+<mark style="background: #FF5582A6;">Não normalizar os dados em redes neurais é menos danoso do que com árvores e KNNs</mark>
 
 
 
