@@ -1,0 +1,3 @@
+D:/Josue/Cursos/Capacitacao_IA_e_IoT/main/IoT/codigos_c_cpp/cmake-build-debug/CMakeFiles/codigos_c_cpp.dir
+D:/Josue/Cursos/Capacitacao_IA_e_IoT/main/IoT/codigos_c_cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Josue/Cursos/Capacitacao_IA_e_IoT/main/IoT/codigos_c_cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
