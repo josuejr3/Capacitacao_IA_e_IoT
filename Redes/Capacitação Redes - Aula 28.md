@@ -35,6 +35,68 @@ Camada de MAC
 ---
 
 -  O LoRa utiliza o *~={blue}espalhamento espectral=~*
+-  Ganho de processamento em técnicas de espalhamento espectral
+
+	![[Pasted image 20250424085607.png]]
+
+-  O ganho de processamento espectral no LoRa.
+
+	![[Pasted image 20250424085643.png]]
+	-  SF sendo um fator de espalhamento (pode ter de 7 até 12);
+	-  BW sendo a largura de banda de modulação.
+
+###### <span style="color:rgb(0, 255, 64)">Modulação LoRa</span>
+
+Em dispositivos LoRa um sistema final possui um módulo de rádio responsável pela codificação/decodificação das informações em um sinal. O sinal é transmitido ou recebido por um *~={blue}gateway=~* que também possui o mesmo módulo que é capaz de modular/demodular o sinal. Dessa forma, a comunicação entre sistema final e gateway é bidirecional e estes dispositivos que se comunicam são chamados de ~={blue}*Transceivers*=~.
+
+![[Pasted image 20250424090322.png]]
+
+![[Pasted image 20250424090725.png]]
+
+-  Se a frequência aumenta temos um UP-CHIRP
+-  Se a frequência diminui temos um DOWN-CHIRP
+
+Em relação aos saltos, um salto decodificado representa um símolo e esse pode representar um ou mais bits de dados e apresenta um total de 2^SF valores possíveis.
+
+![[Pasted image 20250424091120.png]]
+
+O ~={blue}fator de espalhamento SF=~ representa o número de bits da modulação. Na prática, ele representa a duração de um chirp. Sendo assim, quanto maior o SF, mais longo é o chirp e mais bits vão ser transmitidos por um chirp. A cada incremento no SF, o tempo no ar de um chirp dobra, como mostra a tabela acima. 
+
+-  Maior sensibilidade -137 dBm
+-  O SF7 consegue identificar até -123. Já se estivermos operando em SF12 conseguiremos identificar sinais que chegam mais fracos (se estivermos em um receptor).
+-  Modulações como maior fator de espalhamento conseguem identificar sinais mais fracos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
