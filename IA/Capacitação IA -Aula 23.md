@@ -76,20 +76,40 @@ O Perceptron possui duas camadas
 
 ##### <span style="color:rgb(0, 255, 64)">Treinamento</span>
 
--  Atualização de erro
+-  Atualização de erro e pesos
 
 	![[Pasted image 20250423214154.png]]
 
-	- n é uma constante 
+	- n é uma constante chamada de taxa de aprendizado. Normalmente utiliza-se um valor baixo, como por ex: 0.001, 0.002, 0.005 e assim por diante...
+
+		Esse n pode ser considerado como o grau de "violência" que eu quero que os pesos atualizem. Ou seja, se o valor desse parâmetro for muito alto, o valor do peso vai ser ajustado muito drasticamente para cima ou para baixo.
+
+		~={blue}Em resumo, um valor de n é melhor para ir fazendo os ajustes do peso aos poucos.=~
+
+		<mark style="background: #FF5582A6;">Tipo de parâmetro que evita-se mexer</mark>
+
+	- x é o valor de entrada, ou seja, os valores que estão presentes nos ""nós"" em laranja. Ou seja, para atualizar o valor de w1 eu uso x1, para o de w2, x2 e assim por diante.
 	- O erro é dado por (d - y) em que d é o valor desejado da saída durante o treinamento. Já o y é o valor que de fato apareceu.
-	- 
+	- Quando o valor de erro é 0, então o peso não é atualizado, pois a multiplicação total será de 0.
+	- O novo W, ou seja, o peso, vai ser o peso anterior + o peso atual
+	
+```Python
+delta_w = w_atual + w_proximo
+delta_w = w_atual + 0 # se não teve erro
+delta_w = delta_w + w_proximo # se houve o erro
+```
 
+##### <span style="color:rgb(0, 255, 64)">Algoritmo de Treinamento</span>
 
-
-
-
-
-
+-  Inicia todas as conexões com peso (w) = 0
+-  Repita
+	-  Para cada par de treinamento (**X**, d)
+		Com X sendo o vetor de entrada e d sendo o valor desejado
+		- Calcular a saída y
+		-  Se (d é diferente de y) então
+			Atualize os peso até o erro ser aceitável ou até completar um número de ciclos que definimos.
+			
+Um ciclo nesse caso é definido como sendo o processamento de todos os dados do dataset
 
 
 
