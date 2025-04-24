@@ -45,31 +45,44 @@ Perceptrons são redes neurais que possuem um único neurônio. Ele pode ser con
 
 	Para resolver o problema do XOR é necessário utilizar múltiplas camadas
 
-
 ##### <span style="color:rgb(0, 255, 64)">Perceptrons, Estados e Funções</span>
 
 -  Os perceptrons possuem dois estados de ativação
 	-  1 = ativo
 	-  -1  = inativo
--  As funções de ativações dos perceptrons são apenas funções lineares justamente por esse tipo de rede neural possui apenas um único neurônio
-	-  a(t + 1) = f (u(i)(t)) - f de ui em relação ao t
 
+-  As funções de ativações dos perceptrons são apenas funções lineares justamente por esse tipo de rede neural possui apenas um único neurônio (a função é basicamente o somatório u, entradas pelos pesos)
 
+	![[Pasted image 20250423211713.png]]
 
+-  As funções de saída vão ser uma função identidade, ou seja, se a função de ativação deu -1 então a função de saída é -1 também e o mesmo ocorre se for +1.
 
+##### <span style="color:rgb(0, 255, 64)">Camadas do Perceptron</span>
 
+O Perceptron possui duas camadas
 
+-  A primeira camada se trata de um pré-processamento dos dados;
+-  A segunda é a~={blue} camada de descriminação=~ e é onde os dados são processados.
+	-  Essa camada possui um nó de saída;
+	-  E pesos determinados após o aprendizado.
 
+<mark style="background: #FF5582A6;">Obs: um perceptron ele pode ter vários neurônios, porém, uma única camada.</mark>
 
+<mark style="background: #D2B3FFA6;">E qual a diferença nisso?</mark>
 
+![[Pasted image 20250423212638.png]]
 
+-  A camada de pré-processamento não vai ser utilizada, pois nos exemplos que estaremos fazendo vamos fazer o pré-processamento antes.
 
+##### <span style="color:rgb(0, 255, 64)">Treinamento</span>
 
+-  Atualização de erro
 
+	![[Pasted image 20250423214154.png]]
 
-
-
-
+	- n é uma constante 
+	- O erro é dado por (d - y) em que d é o valor desejado da saída durante o treinamento. Já o y é o valor que de fato apareceu.
+	- 
 
 
 
