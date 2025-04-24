@@ -131,6 +131,17 @@ O LoRaWAN é um protocolo de camada de acesso ao meio MAC que é construído sob
 
 -  Alta capacidade - os servidores de uma rede LoRaWAN lidam com milhões de mensagens de milhares de gateways.
 
+![[Pasted image 20250424102159.png]]
+
+![[Pasted image 20250424102505.png]]
+
+-  Na comunicação dos nós finais e o gateway usamos basicamente o que estudamos na camada física.
+-  A partir do gateway, podemos usar TCP/IP
+
+![[Pasted image 20250424103033.png]]
+
+
+
 
 
 
