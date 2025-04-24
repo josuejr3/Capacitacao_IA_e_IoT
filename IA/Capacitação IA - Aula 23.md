@@ -127,7 +127,7 @@ Um ciclo nesse caso é definido como sendo o processamento de todos os dados do 
 
 ![[Pasted image 20250423223458.png]]
 
-O que acontes
+<mark style="background: #D2B3FFA6;">O que acontece se eu tiver mais que um neurônio? na mesma camada?</mark>
 
 
 
