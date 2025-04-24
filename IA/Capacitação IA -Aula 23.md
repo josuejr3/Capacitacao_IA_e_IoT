@@ -111,11 +111,23 @@ delta_w = delta_w + w_proximo # se houve o erro
 			
 Um ciclo nesse caso é definido como sendo o processamento de todos os dados do dataset
 
+<mark style="background: #D2B3FFA6;">Por que os pesos tem que ser zerados ou aleatórios?</mark>
 
+<mark style="background: #D2B3FFA6;">Se tiver mais classes de saída, ex: 3 como vou saber se as classes so são -1 e +1?</mark>
 
+<mark style="background: #D2B3FFA6;">O padrão 001 seriam um "conjunto de atributos"?</mark>
 
+![[Pasted image 20250423222707.png]]
 
+<mark style="background: #D2B3FFA6;">O treinamento é feito até "acertar"?</mark>
 
+![[Pasted image 20250423223111.png]]
+
+> T~={green}estando os dados=~
+
+![[Pasted image 20250423223458.png]]
+
+O que acontes
 
 
 
