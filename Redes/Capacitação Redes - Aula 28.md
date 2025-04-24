@@ -64,6 +64,13 @@ O ~={blue}fator de espalhamento SF=~ representa o número de bits da modulação
 
 -  Maior sensibilidade -137 dBm
 -  O SF7 consegue identificar até -123. Já se estivermos operando em SF12 conseguiremos identificar sinais que chegam mais fracos (se estivermos em um receptor).
+- <mark style="background: #FF5582A6;">O valor acompanhado do SF, ex: SF7 significa que a formação do simbolo é feita com 7 bits e o simbolo é a onda que vai ser transmitida de maneira física pelo ar, ou seja o chirp.</mark>
+
+	Os tipos de onda em um SF são dados por 2^(valor) = X
+	Ex: para SF7
+
+	2^(7) = 128 símbolos, também chamados de formatos de onda. Isso possibilita o envio de mais bits.
+
 -  Modulações como maior fator de espalhamento conseguem identificar sinais mais fracos.
 -  Time on air é o "tempo de viagem" e a medida que eu aumento a quantidade de dados eu aumento a latência.
 
@@ -85,13 +92,44 @@ O ~={blue}fator de espalhamento SF=~ representa o número de bits da modulação
 
 ~={blue}RSSI E SNR=~
 
--  RSSI é um indicador de intensidade do sinal recebido. É uma medição relativa que ajuda a determinar se o sinal recebido é forte o suficiente para obter uma boa comunicação sem fio com o transmissor. É medido em dBm e é importante, pois co
+-  RSSI é um indicador de intensidade do sinal recebido. É uma medição relativa que ajuda a determinar se o sinal recebido é forte o suficiente para obter uma boa comunicação sem fio com o transmissor. É medido em -dBm e é importante para dispositivos finais e gateways, já que LoRa é uma conexão bidirecional. Quanto mais próximo de zero, mais forte é o sinal.
 
+	Fatores que influenciam o RSSI
 
+	-  Perda de caminho;
+	-  Ganho de antena;
+	-  Perda de cabo/conector
 
+-  SNR é a relação sinal-ruído, ou seja, é a relação entre a potência do sinal recebido e o piso de ruído. A SNR é comumente usada para determinar a qualidade do sinal recebido. 
+-  A SNR pode ser calculada usando a seguinte fórmula e geralmente é expressa em decibéis (dB)
 
+	SNR (db) = Preceived_signal (dBm) - Pnois(dBm)
 
+-  Se a SNR for positiva significa que a potência do sinal é maior do que a potência do ruído.
+-  Se a SNR for negativa significa que a potência do sinal é menor do que a potência do ruído.
+-  Se a RSSI estiver acima do piso do ruído, o receptor pode facilmente demodular o sinal.
+-  Se a RSSI estiver abaixo do piso do ruído, teoricamente não é possível fazer a demodulação. Entretanto, devido ao espalhamento no LoRa, conseguimos demodular.
 
+##### <span style="color:rgb(0, 255, 64)">LoRaWAN (Long Range WAN)</span>
+
+O LoRaWAN é um protocolo de camada de acesso ao meio MAC que é construído sobre a modulação LoRa. É uma camada de software que define como os dispositivos usam o hardware LoRa.
+
+-  O LoRaWAN é adequado para transmitir *payloads* de tamanho pequeno (como dados de um sensor) em longas distâncias. 
+
+![[Pasted image 20250424101409.png]]
+###### <span style="color:rgb(0, 255, 64)">Características</span>
+
+-  Ultra baixo consumo de energia - os dispositivos finais LoRaWAN são otimizados para operar no modo de baixo consumo de energia e podem durar até 10 anos com uma única bateria de célula tipo moeda.
+
+- Longo alcance - os gateways podem transmitir e receber sinais a uma distância de mais de 10km em áreas rurais e até 3km em áreas urbanas densas.
+
+-  Penetração interna profunda - as redes LoRaWAN podem fornecer cobertura interna profunda e cobrir facilmente edifícios de vários andares.
+
+-  Espectro livre de licença - não é necessário pagar taxas caras de liença de espectro de frequência para implementar uma rede LoRaWAN.
+
+-  Geolocalização - uma rede LoRaWAN pode determinar a localização de dispositivos finais usando triangulação sem a necessidade de GPS. Um dispositivo final LoRa pode ser localizado, se pelo menos três gateways captarem seu sinal.
+
+-  Alta capacidade - os servidores de uma rede LoRaWAN lidam com milhões de mensagens de milhares de gateways.
 
 
 
