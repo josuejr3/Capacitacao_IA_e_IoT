@@ -65,6 +65,72 @@ O ~={blue}fator de espalhamento SF=~ representa o número de bits da modulação
 -  Maior sensibilidade -137 dBm
 -  O SF7 consegue identificar até -123. Já se estivermos operando em SF12 conseguiremos identificar sinais que chegam mais fracos (se estivermos em um receptor).
 -  Modulações como maior fator de espalhamento conseguem identificar sinais mais fracos.
+-  Time on air é o "tempo de viagem" e a medida que eu aumento a quantidade de dados eu aumento a latência.
+
+![[Pasted image 20250424092340.png]]
+
+![[Pasted image 20250424092450.png]]
+
+###### <span style="color:rgb(0, 255, 64)">Fatores de Espalhamento - Taxa de Dados</span> 
+
+-  Fatores de propagação mais baixos fornecem uma taxa de bits mais alta do que fatores de propagação mais altos para uma largura de banda fixa e taxa de codificação. Ex: o SF7 tem uma taxa de bits mais alta que SF12.
+-  Dobrar a largura de banda também dobra a taxa de bits para um fator de propagação fixo e taxa de codificação.
+-  Na tabela a baixo há as taxas de bits calculadas com SF7, a taxa de codificação CR = 1 para larguras de banda 125, 250 e 500 kHz.
+
+	![[Pasted image 20250424094034.png]]
+
+-  A duração da bateria está ligada diretamente ao fator de propagação. Pois, fatores de propagação mais altos resultam em tempos ativos mais longos para transceptores de rádio, fazendo com que a bateria diminua sua duração.
+-  O fator de espalhamento também está relacionado com o tempo no ar
+-  Quanto maior o fator de espalhamento, maior será a distância que o sinal irá percorrer. Ex:um sinal modulado com SF12 percorre uma distância maior que SF7. Porém, a taxa de transmissão será diminuida.
+
+~={blue}RSSI E SNR=~
+
+-  RSSI é um indicador de intensidade do sinal recebido. É uma medição relativa que ajuda a determinar se o sinal recebido é forte o suficiente para obter uma boa comunicação sem fio com o transmissor. É medido em dBm e é importante, pois co
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
