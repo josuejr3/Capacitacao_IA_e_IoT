@@ -41,6 +41,101 @@ Os recursos de segurança garantem que:
 
 ![[Pasted image 20250424232044.png]]
 
+###### <span style="color:rgb(0, 255, 64)">Formato do pacote físico</span>
+
+O pacote físico é a unidade que é transportada de um ponto a outro, é basicamente o dado. Esse pacote é definido como uma sequência de bits que é modulada e transmitida.
+
+O pacote é formado pelas seguintes partes
+
+-  Preâmbulo
+	Sequência de simbolos identicos que servem para a detecção e sincronização do receptor.
+
+-  CR de cabeçalho
+	-  Cabeçalho
+		É um campo opcional, porém possui seu próprio campo corretor de erro
+	-  CRC
+		Esse campo serve para identificar erros no cabeçalho
+-  CR da carga
+	-  Carga
+		Payload em si que são os bits de carga, ou seja dado propriamente dito.
+	-  CRC
+		Outro campo que serve para fazer identificação de erro do payload.
+
+Com a definição desses conceitos podemos verificar a *Taxa de Codificação* (CR) que é a razação de bits entre o tamanho do campo e o tamanho total do campo mais o CRC.
+
+-  Para o cabeçalho o valor é sempre de 4/8
+-  Para a carga vai ser sempre 4/(4+x) com x estando entre 1 e 4.
+
+![[Pasted image 20250424233702.png]]
+
+###### <span style="color:rgb(0, 255, 64)">Classes de Dispositivos</span>
+
+Os dispositivos finais baseados em LoRa podem operar em três modos diferentes, dependendo de sua classe.
+
+-  Todos os dispositivos devem suportar classe A;
+-  Dispositivos classe B, suportam B e A;
+-  Dispositivos classe C suportam os três modos.
+
+Os modos de operação se relacionam a maneira de como os dispositivos se comunicam com a rede.
+
+O primeiro modo ou classe é fundamental, os outros fazem apenas modificaão na forma de recepção de pacotes do dispositivo final, junto com a adição de alguns comandos de controle da camada MAC. 
+
+---
+
+-  Classe A
+Tem janelas de recepção de pacotes abertas apenas após o envio de mensagens, o que torna ela mais eficiente energeticamente, pois o demodulador não é passivo e consome energia quando espera por um sinal. Essas janelas de recepção da classe Acontinuam sendo abertas em outros modos de operação. ~={red}Só pode receber dados após enviar uma mensagem (uplink.). Fora os momentos de recepção o dispositivo permanece dormindo e economizando bateria=~
+
+-  Classe B
+Semelhante a classe A com a diferença apenas da quantidade de janelas de recepçãoo que possibilita a recepção de mais pacotes, porém com um consumo de energia um pouco maior que a de A.
+
+-  Classe C 
+Uma janela de recepção 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
