@@ -7,3 +7,7 @@
 
 ![[Pasted image 20250425153745.png]]
 
+-  Trabalhando com bits, deslocamento e and bit a bit
+![[Pasted image 20250425160448.png]]
+
+
