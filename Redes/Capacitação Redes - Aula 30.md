@@ -83,13 +83,50 @@ O primeiro modo ou classe é fundamental, os outros fazem apenas modificaão na 
 ---
 
 -  Classe A
-Tem janelas de recepção de pacotes abertas apenas após o envio de mensagens, o que torna ela mais eficiente energeticamente, pois o demodulador não é passivo e consome energia quando espera por um sinal. Essas janelas de recepção da classe Acontinuam sendo abertas em outros modos de operação. ~={red}Só pode receber dados após enviar uma mensagem (uplink.). Fora os momentos de recepção o dispositivo permanece dormindo e economizando bateria=~
+Tem janelas de recepção de pacotes abertas apenas após o envio de mensagens, o que torna ela mais eficiente energeticamente, pois o demodulador não é passivo e consome energia quando espera por um sinal. Essas janelas de recepção da classe Acontinuam sendo abertas em outros modos de operação. ~={red}Só pode receber dados após enviar uma mensagem (uplink.). Fora os momentos de recepção o dispositivo permanece dormindo e economizando bateria.=~
 
--  Classe B
+	- Transmissão half-duplex
+
+![[Pasted image 20250424235643.png]]
+![[Pasted image 20250425000232.png]]
+![[Pasted image 20250425000346.png]]
+![[Pasted image 20250425000755.png]]
+ 
+- Classe B
 Semelhante a classe A com a diferença apenas da quantidade de janelas de recepçãoo que possibilita a recepção de mais pacotes, porém com um consumo de energia um pouco maior que a de A.
 
+![[Pasted image 20250425001632.png]]
+
+![[Pasted image 20250425002016.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -  Classe C 
-Uma janela de recepção 
+Uma janela de recepção é aberta continuamente quando a janela padrão da classe A não está aberta. Fazendo a classe C ser a que apresenta maior consumo de energia e maior capacidade de recepção de dados.
 
 
 
