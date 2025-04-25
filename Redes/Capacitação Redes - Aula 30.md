@@ -20,6 +20,50 @@
 
 ![[Pasted image 20250424224930.png]]
 
+-  Em redes LoRaWAN o ADR é um mecanismo de taxa de dados adaptável, o objetivo dele é economizar a energia da bateria dos nós finais LoRaWAN.
+
+###### <span style="color:rgb(0, 255, 64)">Segurança em dispositivos LoRaWAN</span>
+
+Em dispositivos LoRaWAN existem dos elementos principais em relação à segurança: o procedimento de associação e autenticação de mensagens. O procedimento de associação estabelece autenticação mútua entre um dispsitivo final e a rede LoRaWAN à qual ele está conectado. 
+
+Somente dispositivos autorizados têm permissão para se conectar à rede. LoRaWAN MAC e mensagens de aplicações são autenticadas por origem, protegidas por integridade e criptografadas de ponta a ponta (ou seja, do dispositivo final para o servidor de aplicações e vice-versa).
+
+Os recursos de segurança garantem que:
+
+-  O tráfego de rede não foi alterado;
+-  Apenas dispositivos legítims estão conectados à rede LoRaWAN;
+-  O tráfego de rede não pode ser ouvido (sem escutas);
+-  O tráfego de rede não pode ser capturado ou reproduzido.
+
+![[Pasted image 20250424231507.png]]
+
+![[Pasted image 20250424231945.png]]
+
+![[Pasted image 20250424232044.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
