@@ -96,37 +96,38 @@ Tem janelas de recepção de pacotes abertas apenas após o envio de mensagens, 
 Semelhante a classe A com a diferença apenas da quantidade de janelas de recepçãoo que possibilita a recepção de mais pacotes, porém com um consumo de energia um pouco maior que a de A.
 
 ![[Pasted image 20250425001632.png]]
-
 ![[Pasted image 20250425002016.png]]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--  Classe C 
+![[Pasted image 20250425002354.png]]
+![[Pasted image 20250425002541.png]]
+![[Pasted image 20250425002528.png]]
+![[Pasted image 20250425002728.png]]
+ 
+- Classe C 
 Uma janela de recepção é aberta continuamente quando a janela padrão da classe A não está aberta. Fazendo a classe C ser a que apresenta maior consumo de energia e maior capacidade de recepção de dados.
+
+![[Pasted image 20250425002819.png]]
+![[Pasted image 20250425003158.png]]
+![[Pasted image 20250425003233.png]]
+![[Pasted image 20250425003508.png]]
+![[Pasted image 20250425003606.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
