@@ -176,6 +176,48 @@ void app_main(){
 }
 ```
 
+###### <span style="color:rgb(0, 255, 64)">Problemas com códigos de execução concorrente</span>
+
+Execução concorrente são trechos diferentes de código que vão intercalar o uso de um mesmo processador e podem compartilhar conteúdo. 
+
+Esse fenômeno ocorre bastante em situações que usa-se multithread.
+
+-  Dados compartilhados
+	-  A comunicação entre as ISRs e o código da tarefa é feita por meio de ~={red}variáveis compartilhadas=~. (Em alguns casos pode ocorrer ~={red}condição de corrida=~)
+	
+	![[Pasted image 20250426161721.png]]
+
+	O código apresenta problemas, um deles sendo a interrupção sendo gerada durante a verificação das temperaturas e a outra durante a atribuição. Nesse caso os novos valores seriam atribuidos na função de interrupção, porém, no programa principal eles estariam desatualizados.
+
+<mark style="background: #D2B3FFA6;">Ao invés de usar variáveis comuns, poderiamos usar ponteiros e atribuir o valor para qual o ponteiro aponta? </mark>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
