@@ -34,5 +34,13 @@ Entretanto, não há tanta necessidade desses códigos do jeito que estão escri
 
 ![[Pasted image 20250426132655.png]]
 
+![[Pasted image 20250426133008.png]]
+
+-  O gpio_config é uma função que faz a configuração do GPIO;
+-  gpio_config_t é uma struct que contem todos os membros necessários que definem um GPIO, como resistores PULLUP E PULLDOWN, mascaras e interrupções. 
+-  Passamos o gpio_config_t por referência para a função de configuração para poupar memória na pilha de execução e para ter acesso ao registrador.
+
+
+
 ##### <span style="color:rgb(0, 255, 64)">Software Embarcado - Interrupções</span>
 
