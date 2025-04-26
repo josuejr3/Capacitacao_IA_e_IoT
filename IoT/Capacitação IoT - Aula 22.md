@@ -133,6 +133,78 @@ Assim como em funções, antes da rotina de tratamento de interrupções ser fin
 
 Chamamos essas duas técnicas de ~={blue}salvamento e recuperação de contexto=~. E essa técnica também é bastante usada quando estamos fazendo uso de múltiplos threads e processos.
 
+---
+###### <span style="color:rgb(0, 255, 64)">Configuração de GPIO na ESP32</span>
+
+Toda função/rotina que trata interrupções deve seguir um formato específico. Como por exemplo um ponteiro void, um retorno também void.
+
+-  O ponteiro pra void * void significa basicamente que eu posso receber o ponteiro para qualquer coisa. É um ponteiro genérico
+-  IRAM_ATTR força os códigos a ficarem salvos na memória RAM, deixando o acesso mais rápido.
+-  Qual o motivo do static?
+-  Mesmo o parâmetro sendo ponteiro para void, é necessário fazer o casting para a variável que pretende-se receber.
+
+```C
+static void IRAM_ATTR gpio0_isr_handler(void *arg){
+	uint8_t *v = (uint8_t*) arg;
+	*v = 1;
+}
+static void IRAM_ATTR gpio1_isr_handler(void* arg){
+	uint8_t *v = (uint8_t*) arg;
+	*v = 0;
+}
+```
+
+###### Configurando as Interrupções no ESP32
+
+Por padrão os botões ficam em nível alto. Dessa forma, a interrupção será acionada sempre que ocorrer o nivel baixo nos botões, ou seja, quando forem pressionados.
+
+```C
+void setup(){
+	...
+	button_conf_intr_type = GPIO_INTR_LOW_LEVEL;
+	...
+}
+void app_main(){
+	...
+	// install gpio isr service
+	gpio_install_isr_service(ESP_INTR_FLAG_LOWMED);
+	// hook isr handler for specific gpio pin
+	gpio_isr_handler_add(BUTTON_0, gpio0_isr_handler, (void*) &valor);
+	// hook isr handler for specific gpio pin
+	gpio_isr_handler_add(BUTTON_1, gpio_isr_handler, (void*), &valor);
+	...
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
