@@ -101,9 +101,45 @@ void app_main() {
 
 ##### <span style="color:rgb(0, 255, 64)">Software Embarcado - Interrupções</span>
 
-###### <span style="color:rgb(0, 255, 64)">Conceitos Iniciais</span>
+###### ~={cyan}Conceitos Iniciais=~
 
 O que é uma interrupção?
+
+São semelhantes as funções, ou seja, fazem um desvio no fluxo do programa, porém a chamada não é explícita como nas funções. 
+
+-  Permitem oferecer respostas a eventos assíncronos mesmo estando no meio da execução de alguma tarefa.
+-  Dispositivos internos do micro-controlador também podem gerar interrupções
+-  <mark style="background: #FF5582A6;">O tratamento de exceções é diferente do tratamento de interrupções
+</mark>
+
+		
+
+Interrupções ocorrem quando algum evento assíncrono de hardware externo altera o fluxo do programa.
+
+![[Pasted image 20250426150413.png]]
+
+> ~={green}Exemplo=~
+
+Um clássico exemplo são as transmissões de pacotes entre um microcontrolador e um transceptor. Sempre que o transceptor recebe um pacote ele cria uma interrupção para "avisar" que recebeu um pacote que deve ser lido.
+
+Quando a interrupção é gerada, o programa principal para, a interrupção é trata e após isso o programa continua o fluxo.
+
+---
+
+Assim como em funções, antes da rotina de tratamento de interrupções ser finalizada há condições que precisam ser satisfeitas
+
+-  O PC (program counter) deve conter o endereço da próxima instrução do bloco interrompido;
+-  Os registradores precisam ter seus valores restaurados;
+
+Chamamos essas duas técnicas de ~={blue}salvamento e recuperação de contexto=~. E essa técnica também é bastante usada quando estamos fazendo uso de múltiplos threads e processos.
+
+
+
+
+
+
+
+
 
 
 
