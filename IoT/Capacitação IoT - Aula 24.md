@@ -32,3 +32,58 @@ Ainda há um problema nesse caso que é o seguinte
 
 	Se considerarmos um long com um total de bits de 64, e o microprocessador de 32 bits, então o microprocessador tem só consegue manipular de uma única vez até 32 bits. Isso vai fazer com que o return que estamos usando seja "quebrado" em várias instruções.
 
+<mark style="background: #D2B3FFA6;">O código acima, ficaria melhor usando um static toda vez que o tratamento de exceções fosse chamado?</mark>
+
+Outra alternativa, seria ler a variável duas vezes, nesse caso lê a quantidade de segundos uma vez e depois lê de novo.
+
+O que quer dizer se eu li o valor antes de entrar na zona crítica, ele deu um X e após sair da zona crítica ele deu outro, valor, um Y. Significa que durante esse meio tempo, houve a transição. 
+
+![[Pasted image 20250428180746.png]]
+
+---
+
+-  O uso da palavra chave **~={cyan}volatile=~** em C/C++ é usada para informar ao compilador que a variável pode ser alterada por outro trecho de código.
+
+Essa palavra chave é usada em situações de trechos de códigos concorrentes. Pois em programação "normal" o compilador otimiza o trecho de código para que não seja necessário obter os valores novamente da memória. 
+
+Quando usamos o volatile ele informa ao compilador "sempre pegue o valor que está na memória porque ele pode ter sido alterado."
+
+
+---
+
+###### Interrupções Concorrentes
+
+-  Quando duas interrupções ocorrem ao mesmo tempo
+
+	-  A de maior prioridade é executada;
+	-  As vezes diferentes fontes "compartilham" a mesma ISR (Instruction Routine)
+		-  Deve-se verificar todas as possíveis fontes dentro da ISR 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
