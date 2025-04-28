@@ -191,6 +191,10 @@ Esse fenômeno ocorre bastante em situações que usa-se multithread.
 
 <mark style="background: #D2B3FFA6;">Ao invés de usar variáveis comuns, poderiamos usar ponteiros e atribuir o valor para qual o ponteiro aponta? </mark>
 
+-  Uma possível solução para resolver esse problema seria desabilitar as interrupções na ~={red}região crítica=~. (Porém pode causar problemas de temporização).
+
+	-  Região crítica é o trecho de código em que estou acessando as variáveis que são compartilhadas
+ ![[Pasted image 20250426163827.png]]
 
 
 
