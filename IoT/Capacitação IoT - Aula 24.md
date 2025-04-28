@@ -51,16 +51,68 @@ Quando usamos o volatile ele informa ao compilador "sempre pegue o valor que est
 
 ---
 
-###### Interrupções Concorrentes
+###### <span style="color:rgb(0, 255, 64)">Interrupções Concorrentes</span>
 
 -  Quando duas interrupções ocorrem ao mesmo tempo
 
-	-  A de maior prioridade é executada;
-	-  As vezes diferentes fontes "compartilham" a mesma ISR (Instruction Routine)
-		-  Deve-se verificar todas as possíveis fontes dentro da ISR 
+	-  ~={blue}A de maior prioridade é executada;=~
+
+		As interrupções podem vir de várias fontes,  e com isso podemos setar uma prioridade diferente para cada fonte de interrupção.
 
 
+	-  ~={blue}As vezes diferentes fontes "compartilham" a mesma ISR. =~
 
+		Nesse caso, vai existir uma única função de tratamento de interrupções para vários tipos de interrupções. Quando isso ocorre, a verificação de quem gerou a interrupção ocorre internamente.  (normalmente usamos if e elses) 
+
+	-  ~={blue}Outra coisa que pode acontecer é a aparição de interrupções aninhados.=~
+
+		Isso quer dizer que eu posso estar no meio da execução de uma interrupção e eu chavear para uma outra interrupção de maior prioridade. Se a prioridade for menor ou igual, então a interrupção atual é tratada primeiro, ou seja, não ocorre a aninhada. (Normalmente pode ser habilitada manualmente, depende do microcontrolador).
+
+
+<mark style="background: #D2B3FFA6;">Uso do static em tratamento de interrupções e sistemas embarcados</mark>
+
+###### <span style="color:rgb(0, 255, 64)">Interrupções Desabilitadas</span>
+
+O que ocorre se uma interrupção for gerada enquanto as interrupções estiverem desabilitadas?
+
+-  No geral, a interrupção vai ser *postergada* (adiada);
+-  As vezes as interrupções são desabilitadas por um tempo, mas os eventos não podem ser perdidos. 
+
+###### Latência de Interrupção 
+
+Alguns fatores que influenciam na latência de interrupções são
+
+-  Período mais longo em que a interrupção fica desabilitada
+
+É o tempo entre a desativação e reativação da interrupções no programa
+
+-  Tempo de execução de todas as interrupções com prioridade superior
+
+É o tempo que leva para que todas as execuções de interrupções de prioridade superiores sejam concluídas.
+
+-  Tempo de chaveamento do processador;
+
+É o tempo em que o processador troca de uma rotina para outra. 
+
+-  Tempo para salvamento do contexto e execução da ISR, relação com IRQ (Interrupt Request)
+
+É o tempo em que o ponto atual do programa é salvo na pilha de execução até que ele retorna após a execução da função de tratamento de exceção.
+
+###### Resolução para diminuir a latência no contexto de interrupções
+
+-  Avaliar o tempo de processos e tarefas
+
+	O tempo pode ser determinado de duas formas
+	-  Contando instruções;
+	-  Realizando experimentos (principalmente em cenários não determinísticos).
+
+-  Como lidar com gargalo em tempo de resposta
+
+	Quando os fatores dependem de software, podemos;
+	-  Escrever códigos eficientes;
+	-  Escrever ISRs curtas;
+	-  Desabilitar interrupções o mínimo possível;
+	-  Determinar cuidadosamente as prioridades
 
 
 
