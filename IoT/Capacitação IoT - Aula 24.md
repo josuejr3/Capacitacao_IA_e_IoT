@@ -134,22 +134,37 @@ nunca teremos o tempo de 250 microsegundos com os 125 em seguida. **Por que?**
 
 ###### <span style="color:rgb(0, 255, 64)">Timers</span>
 
+De maneira simples, um timer é um contador de ciclos de clock (ticks)
 
+Ele é bastante usando para:
 
+	1. Ativar aquisição de um CAD (conversor analógico-digital);
+	2. Gerar uma saída PWM (Pulse width Modulation);
+	3. Gerar uma interrupção após um período de tempo 
+	
+![[Pasted image 20250428193801.png]]
 
+-  Registradores mais comuns usados para timers
 
+1. Counter - conta a quantidade de ticks;
+2.  Compare - valor alvo (quando o valor chegar em X, gera a interrupção, ou seja, chegou no tempo que eu esperava e usei a comparação para isso)
+3.  Action - configura a ação a ser tomada;
+4.  Control - inicializar e resetar timers e contadores;
+5.  Interrupt - habilitar, setar prioridade, limpar, checar status;
+6.  Prescaler - dividir o clock de entrada (vimos isso com HSI e HSE em microcontroladores e microprocessadores)
 
+###### <span style="color:rgb(0, 255, 64)">Para ter um bom controle do timer é importante saber controlar a quantidade de ticks
+</span>
 
+Para saber a quantidade de ticks em um certo tempo, ou para um ciclo se formos pensar em ciclos por segundo. Devemos considerar o seguintes
 
+-  Clock de entrada (fonte de clock) - 4MHz - 4.10 ^ 6
+-  Divisor que foi usado - 4
+-  Tempo desejado (ciclo) - 20 
 
-
-
-
-
-
-
-
-
+```
+ticks = 4 MHz / (4 * 20)
+```
 
 
 
