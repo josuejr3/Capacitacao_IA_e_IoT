@@ -78,7 +78,7 @@ O que ocorre se uma interrupção for gerada enquanto as interrupções estivere
 -  No geral, a interrupção vai ser *postergada* (adiada);
 -  As vezes as interrupções são desabilitadas por um tempo, mas os eventos não podem ser perdidos. 
 
-###### Latência de Interrupção 
+###### <span style="color:rgb(0, 255, 64)">Latência de Interrupção </span>
 
 Alguns fatores que influenciam na latência de interrupções são
 
@@ -98,7 +98,7 @@ Alguns fatores que influenciam na latência de interrupções são
 
 É o tempo em que o ponto atual do programa é salvo na pilha de execução até que ele retorna após a execução da função de tratamento de exceção.
 
-###### Resolução para diminuir a latência no contexto de interrupções
+###### <span style="color:rgb(0, 255, 64)">Resolução para diminuir a latência no contexto de interrupções</span>
 
 -  Avaliar o tempo de processos e tarefas
 
@@ -113,6 +113,48 @@ Alguns fatores que influenciam na latência de interrupções são
 	-  Escrever ISRs curtas;
 	-  Desabilitar interrupções o mínimo possível;
 	-  Determinar cuidadosamente as prioridades
+
+![[Pasted image 20250428190844.png]]
+
+Nesse caso, desabilitamos as interrupções se uma chegar ela não será executada até que as interrupções sejam habilitadas novamente.    
+
+Mas só precisamos nos preocupar com o maior tempo que fica desabilitado, ou seja, 250 microsegundos. Pois nunca teremos uma junção dos dois tempos, 250 e 125.
+
+(desabilita as interrupções -> 250 ms -> habilita -> 125), ~={red}isso não ocorre=~. Isso não ocorre, pois quando eu habilitar novamente, imediatamente a interrupção que tinha sido "arquivada" será chamada. Imediatamente a rotina de tratamento de execução de excução é chamada, levando um tempo de 300 microsegundos. 
+
+Sendo assim, o tempo total é de 550, 250 para desabilitar interrupções + 300 para tratar essa interrupção e retornar para o fluxo normal. 
+
+	1. Então sim, consegui atender ao tempo máximo de resposta que eu queria de 625 ms
+
+	2 Não, pois no pior caso eu terei 550 ms
+
+nunca teremos o tempo de 250 microsegundos com os 125 em seguida. **Por que?**
+
+![[Pasted image 20250428192259.png]]
+
+###### <span style="color:rgb(0, 255, 64)">Timers</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
