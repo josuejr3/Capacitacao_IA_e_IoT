@@ -160,11 +160,33 @@ Para saber a quantidade de ticks em um certo tempo, ou para um ciclo se formos p
 
 -  Clock de entrada (fonte de clock) - 4MHz - 4.10 ^ 6
 -  Divisor que foi usado - 4
--  Tempo desejado (ciclo) - 20 
+-  Tempo desejado (ciclo) - 20 Hz
 
 ```
 ticks = 4 MHz / (4 * 20)
+
+ticks = (4 x 10 ^ 6) / (4 * 20)
 ```
+
+![[Pasted image 20250428200017.png]]]
+
+Agora usando com prescaler de 80
+
+```
+ticks = (80 x 10 ^ 6 ) / (80 * 2)
+
+ticks = 500000
+```
+
+Esse cálculo é bastante usado quando nos referimos ao registrador *compare*,
+
+![[Pasted image 20250428200444.png]]
+
+![[Pasted image 20250428200627.png]]
+
+![[Pasted image 20250428201210.png]]
+
+
 
 
 
