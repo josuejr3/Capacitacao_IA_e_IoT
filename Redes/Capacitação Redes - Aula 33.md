@@ -117,6 +117,71 @@ Essa camada
 
 Esse modo é o de teste direto, só é necessário para realizar testes de RF e é usado durante a fabricação e para testes de certificação. 
 
+~={cyan}Host Controller Interface (HCI) Layer=~
+
+-  Realiza uma interface entre a camada inferior (controller) e a superior (host);
+-  As camadas podiam existir em chipsets diferentes.
+
+![[Pasted image 20250429102044.png]]
+
+-  A tarefa da camada HCI é retransmitir comandos do host para o controlador e enviar eventos de volta do controlador para o host.
+
+> ~={green}Exemplos de mensagens:=~
+
+Pacotes de comandos, configuração do controlador, solicitações de ações, controle de conexão e parâmetros de conexão.
+
+~={cyan}Logical Link Control and Adaptation Protocol (L2CAP) Layer=~
+
+Atua como uma camada de multiplexação de protocolo. Ele é emprestado do Bluetooth Classic e faz as seguintes tarefas.
+
+-  Recebe vários protocolos das camadas superiores e os coloca em pacotes BLE padrão que são transmitidos às camadas inferiores abaixo dele.
+-  Lida com a fragmentação e recombinação. Ele recebe os pacotes maiores da parte de camadas superiores e as divide em pedaos que cabem no tamaho máximo de carga útil do BLE suportado para transmissão. No receptor, ele recebe vários pacotes e combina em um pacote que pode ser manipulado pelas camadas superiores.
+
+No BLE, essa camada lida com dois protocolos prinicpais: ATT e SMP (attribute protocol e security manager protocol).
+
+![[Pasted image 20250429102952.png]]
+![[Pasted image 20250429103044.png]]
+![[Pasted image 20250429103248.png]]
+![[Pasted image 20250429103446.png]]
+![[Pasted image 20250429103808.png]]
+![[Pasted image 20250429104115.png]]
+
+~={cyan}Camada de Perfil de Acesso Genérico=~
+
+![[Pasted image 20250429104342.png]]
+![[Pasted image 20250429104512.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
