@@ -56,10 +56,12 @@ Depende do uso e refere-se a implementação sobre o perfil de acesso génerico 
 
 -  Camada controller
 
-1. HCI
+1. HCI;
 2. LL - Link Layer;
 3. Direct Test Mode - DTM;
 4. Camada física - PHY
+
+HCI - Roda em duas camadas.
 
 ![[Pasted image 20250429093639.png]]
 
@@ -69,6 +71,121 @@ Depende do uso e refere-se a implementação sobre o perfil de acesso génerico 
 ![[Pasted image 20250429094250.png]]
 ![[Pasted image 20250429094404.png]]
 ![[Pasted image 20250429094551.png]]
+
+---
+
+-  ~={blue}Camada de Link Layer=~
+
+É a camada de enlace e é a camada que faz a interface com a camada física (rádio) e fornece a camadas de nível superior uma abstração e uma forma de interagir com o rádio (através de um nível intermediário chamado camada HCI). 
+
+Essa camada
+-  Gerencia estado do rádio e requisitos de tempo para atisfazer a especificação BLE;
+-  Gerencia operações aceleradas por hardware como: CRC, geração de números aleatórios e criptografia.
+
+~={blue}Estados de operação de dispositivos BLE=~
+-  Advertising state (anúncio) - ele se mostra pra rede;
+-  Scanning state (busca) - é feita uma busca por outro dispositivo bluetooth;
+-  Connected state (conexão estabelecida) - o dispositivo que inicia a conexão é o mestre, o que estava anunciado é o escravo;
+-  Standby - (não transmite dados);
+-  Initiating -(estado em que um dispositivo de digitalização decide estabelecer uma conexão com um dispositivo que é anunciado);
+
+![[Pasted image 20250429095617.png]]
+
+~={cyan}Endereçamento Bluetooth=~
+
+-  O endereçamento em dispositivos bluetooth é semelhante ao MAC e tem um total de 48 bits. Existem dois endereços principais, o público e o aleatório.
+
+		Público - esse não muda, é fixo e vem programado de fábrica. Deve ser registrado no IEEE (igual ao endereço MAC de um dispositivo wi-fi ou ethernet).
+
+		Aleatório - os fabricantes podem escolher se usam aleatório, ou público. Os aleatórios não exigem registro no IEEE. O endereço é programado no dispositivo ou gerado em tempo de execução e pode ser de dois subtipos diferentes.
+
+		1. Static address
+			- Gerado na inicialização OU permanece o mesmo durante a vida útil;
+			- Não é possível alterar até desligar e ligar a energia;
+			- Usado como substituto do endereço público.
+		2. Private address
+			- Endereço privado não resolvível:
+				- Aleatório, temporário por um certo tempo;
+				- Não é comumente usado.
+			- Endereço privado resolvível:
+				-  Gerao para privacidade;
+				-  Gerado usando Identit Resolving Key (IRK) e um número aleatório
+				-  Muda periodicamente (mesmo durante a vida útil da conexão).
+				-  Usado para evitar ser rastreado por scanners desconhecidos.
+
+~={cyan}Direct Test Mode (DTM)=~
+
+Esse modo é o de teste direto, só é necessário para realizar testes de RF e é usado durante a fabricação e para testes de certificação. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
