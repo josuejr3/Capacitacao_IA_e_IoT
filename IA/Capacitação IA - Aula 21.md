@@ -75,6 +75,8 @@ No exemplo da base de dados íris, ela possui 4 colunas, ou seja, quatro atribut
 
 <mark style="background: #D2B3FFA6;">Dúvida: por que os pesos mudam em neurônios de uma mesma camada? eles podem ser iguais?</mark>
 
+Sim
+
 ![[Pasted image 20250421121546.png]]
 
 -  u11 pode ser aplicado em uma função de ativação, (função linear), ou poder ser aplicado em uma função de ativação complexa.

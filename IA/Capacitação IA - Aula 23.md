@@ -113,13 +113,21 @@ Um ciclo nesse caso é definido como sendo o processamento de todos os dados do 
 
 <mark style="background: #D2B3FFA6;">Por que os pesos tem que ser zerados ou aleatórios?</mark>
 
+ok
+
 <mark style="background: #D2B3FFA6;">Se tiver mais classes de saída, ex: 3 como vou saber se as classes so são -1 e +1?</mark>
 
+alterar função de ativação
+
 <mark style="background: #D2B3FFA6;">O padrão 001 seriam um "conjunto de atributos"?</mark>
+
+SIM
 
 ![[Pasted image 20250423222707.png]]
 
 <mark style="background: #D2B3FFA6;">O treinamento é feito até "acertar"?</mark>
+
+SIM
 
 ![[Pasted image 20250423223111.png]]
 
