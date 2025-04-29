@@ -61,6 +61,31 @@ Um dispositivo bluetooth 5 pode se comunicar com um 4.1 BLE, mas os recursos esp
 
 <mark style="background: #D2B3FFA6;">Então no final das contas não é uma transmissão menor?</mark>
 
+![[Pasted image 20250428235431.png]]
+
+![[Pasted image 20250428235601.png]]
+
+###### <span style="color:rgb(0, 255, 64)">Vantagens</span>
+
+![[Pasted image 20250428235651.png]]
+
+![[Pasted image 20250428235917.png]]
+![[Pasted image 20250429000054.png]]
+![[Pasted image 20250429000348.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
