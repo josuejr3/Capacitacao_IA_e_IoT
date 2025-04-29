@@ -32,6 +32,157 @@ O BLE as vezes é chamado de Bluetooth Smart ou BTLE e confundido com o Bluetoot
 
 	![[Pasted image 20250428231728.png]]
 
+###### <span style="color:rgb(0, 255, 64)">Características Gerais sobre o BLE</span>
+
+-  Espectro de frequência ocupado é: 2,400 ~ 2,4835 GHz.
+-  O espectro de frequência é segmentado em 40 canais de "2 MHz" de largura;
+-  A taxa de dados máxima suportada pelo rádio (introduzida na versão 5 do Bluetooth) é 2 Mbps;
+-  O consumo de energia pode variar a depender da implementação e aplicação e dos parâmetros BLE. Entretanto, normalmente o pico de corrente em um chipset BLE durante transmissão não ultrapassa 15mA;
+-  Em relação a segurança, ela é opcional e cabe ao desenvolvedor do dispositivo implementar;
+-  Para operações de criptografia, o BLE usa AES CCM com uma chave de 128 bits;
+-  O BLE foi projetado para uma baixa taxa de transferência de dados. Se submetido a aplicações que requerem alta taxa,  a promessa de ser de baixo consumo de energia será comprometida;
+-  Quando falamos em BLE, dizemos que são compatíveis entre si, entretanto, a comunicação pode ser limitada devido as características da versão mais antiga.
+
+> ~={green}Exemplo=~
+
+Um dispositivo bluetooth 5 pode se comunicar com um 4.1 BLE, mas os recursos específicos do 5 não vão ser suportados. 
+
+![[Pasted image 20250428233715.png]]
+
+###### <span style="color:rgb(0, 255, 64)">Aplicações</span>
+
+![[Pasted image 20250428233901.png]]
+
+###### <span style="color:rgb(0, 255, 64)">Limitações do BLE</span>
+
+![[Pasted image 20250428234620.png]]
+
+![[Pasted image 20250428234758.png]]
+
+<mark style="background: #D2B3FFA6;">Então no final das contas não é uma transmissão menor?</mark>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
