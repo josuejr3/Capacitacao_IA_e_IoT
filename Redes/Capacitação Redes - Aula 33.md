@@ -150,6 +150,20 @@ No BLE, essa camada lida com dois protocolos prinicpais: ATT e SMP (attribute pr
 
 ![[Pasted image 20250429104342.png]]
 ![[Pasted image 20250429104512.png]]
+![[Pasted image 20250429104847.png]]
+![[Pasted image 20250429105112.png]]
+![[Pasted image 20250429105342.png]]
+
+
+
+
+
+
+
+
+
+
+
 
 
 
