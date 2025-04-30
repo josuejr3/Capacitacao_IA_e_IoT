@@ -124,7 +124,18 @@ Em relação ao número de neurônios intermediários
 </mark>
 
 ![[Pasted image 20250429224808.png]]
-	
+
+![[Pasted image 20250429224950.png]]
+
+![[Pasted image 20250429225104.png]]
+
+![[Pasted image 20250429225228.png]]
+
+
+
+
+
+
 
 
 
