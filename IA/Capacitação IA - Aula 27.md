@@ -92,6 +92,71 @@ No backpropagation temos dois estados de ativação
 -  1 (+1) = Ativo
 -  0 (-1) = Inativo
 
+###### <span style="color:rgb(0, 255, 64)">Pseudocódigo</span>
+
+![[Pasted image 20250429222142.png]]
+
+![[Pasted image 20250429222911.png]]
+
+###### <span style="color:rgb(0, 255, 64)">MLPs como Classificadores</span>
+
+Função implementada por cada neurônio é formada pela combinação das funções implementadas por neurônios da camada anterior.
+
+-  ~={blue}Camada 1=~ - Linhas retas no espaço de decisão. 
+-  ~={blue}Camada 2=~ - Regiões convexas 
+	-  Número de lados - número de unidades na camada 1
+	![[Pasted image 20250429223625.png]]
+-  ~={blue}Camada 3=~ - Combinações de figuras convexas, produzindo formatos abstratos.
+	![[Pasted image 20250429223736.png]]
+
+Em relação ao número de neurônios intermediários
+
+-  Número de camadas intermediárias necessárias;
+	-  1 camada - suficiente para aproximar qualquer função contínua ou booleana;
+	-  2 camadas - suficiente para aproximar qualquer função
+	-  3 ou mais camadas - pode facilitar o treinamento da rede
+
+-  Número de pesos menor que o número de exemplos
+	-  Apenas reduz ~={red}overfitting=~
+	-  Se o número de exemplos for muito maior que o número de pesos, ~={red}overfitting=~ é improvável, mas pode ocorrer ~={red}underfitting=~
+
+<mark style="background: #D2B3FFA6;">Quanto mais camadas eu uso mais ele delimita a rede e possibilita a formação de melhores figuras, então quanto mais camadas mais facil ter overfitting?
+</mark>
+
+![[Pasted image 20250429224808.png]]
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
