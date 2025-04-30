@@ -38,18 +38,59 @@ Em relação ao treinamento, exitem muitos algoritmos de treinamento que podem s
 
 	MLPs com formatos e tamanhos diferentes podem utilizar a mesma regra de aprendizado
 
-	Topologias diferentes podem resolver o mesmo problema. 
+	*Topologias diferentes podem resolver o mesmo problema.* 
 
 -  Regra mais usada: backpropagation
 
+###### <span style="color:rgb(0, 255, 64)">Backpropagation - (Fase de Treinamento)</span>
 
+O backpropagation é um algoritmo de treinamento para MLPs e ele é dividido em dois momentos.
 
+-  Fase forward 
 
+Pega cada uma das linhas do dataset e leva para a rede neural. Após chegar no final (e como estamos treinando) ele retorna. 
 
+-  Fase backward
 
+É a fase que começa quando o valor da rede neural foi obtido, ele usa o valor do erro obtido e vai ajustando os pesos a partir do final da rede neural até o começo no sentindo de "voltando". ~={red}Essa fase só existe no treinamento.
+=~
+![[Pasted image 20250429215522.png]]
 
+Ainda em relação a MLP temos o seguinte
 
+-  Rede é treinada com pares *entrada-saída*
+-  Cada entrada de treinamento está associada a uma ~={red}saída desejada=~.
+-  Treinamento em duas fases, cada uma percorrendo a rede em um sentido.
 
+	![[Pasted image 20250429220059.png]]
+
+-  A quantidade de camadas intermediárias pode mudar de implementação para implementação.
+
+	![[Pasted image 20250429220400.png]]
+
+---
+###### <span style="color:rgb(0, 255, 64)">Procedimento</span>
+
+~={cyan}FORWARD=~
+
+- Entrada é apresentada à primeira camada da rede;
+	-  Após os neurônios da camada i calcularem seus sinais de saída, os neurônios da camada i + 1 calculam seus sinais de saída.
+
+- Saidas produzidas pelos neurônios da última camada são comparadas às saídas desejadas;
+
+~={red}Erro - para cada neurônio da camada de saída é calculado.=~
+
+~={cyan}BACKWARD=~
+
+- A partir da última camada
+	-  O nó ajusta seu peso de modo a reduzir o erro
+	-  Nós das camadas anteriores tem seu erro definido por:
+		- Erros dos nós da camada seguinte conectados a ele, ponderado pelos pesos das conexões entre eles.
+
+No backpropagation temos dois estados de ativação
+
+-  1 (+1) = Ativo
+-  0 (-1) = Inativo
 
 
 
