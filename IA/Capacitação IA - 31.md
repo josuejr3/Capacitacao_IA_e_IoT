@@ -15,6 +15,7 @@ A reta na figura acima é a reta que melhor representa o conjunto de dados. (Pod
 
 - Em classificação mediamos a assertividade a partir da acurância. Em regressão existem varias formas omo por exemplo:
 
-	-  MSE (Mean Square Error) - média do quadrado do erro;
+	-  MSE (Mean Square Error) - média do quadrado do erro - mais usado;
 	-  RMSE (Root Mean Square Error);
-	-  M
+	-  MAE (Mean Absolut Error)
+	-  MAPE (Mean Absolut Percentage Error)
