@@ -76,7 +76,7 @@ O teorema de Shannon nos informa que a capacidade máxima de transmissão de um 
 
 Diferente das pilhas que vimos antes, TCP/IP e OSI o ZigBee possui sua pilha própria, que pode ser encontrada a partir do IEEE 802.15.4
 
--  IEEE 802.15.4 é uma tecnologia de acesso sem fio paraa dispositivos de baixo custo e baixa taxa de dados que são alimentados ou funcionam por meio de baterias;
+-  IEEE 802.15.4 é uma tecnologia de acesso sem fio para dispositivos de baixo custo e baixa taxa de dados que são alimentados ou funcionam por meio de baterias;
 
 -  Várias pilhas de comunicação de rede utilizam essa tecnologia;
 

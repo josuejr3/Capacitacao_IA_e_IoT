@@ -146,7 +146,7 @@ A coexistência é a capacidade de dispositivos sem fio de diferentes tecnologia
 
 -  Endereço de 64 - é o endereço fixo de identificação do módulo, no momento da sua fabricação. Ele é único para cada dispositivo e não possuem o mesmo valor.
 
--  Endereço de 16 - é o endereço dinâmico que o módulo recebe ao ingressar em uma PAN. Ele é  endereço de rede, sendo fornecido pelo coordenador ou roteador.
+-  Endereço de 16 - é o endereço dinâmico que o módulo recebe ao ingressar em uma PAN. Ele é endereço de rede, sendo fornecido pelo coordenador ou roteador.
 
 ![[Pasted image 20250419140116.png]]
 

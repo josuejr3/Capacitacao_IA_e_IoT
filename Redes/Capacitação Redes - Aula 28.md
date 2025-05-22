@@ -56,7 +56,7 @@ Em dispositivos LoRa um sistema final possui um módulo de rádio responsável p
 -  Se a frequência aumenta temos um UP-CHIRP
 -  Se a frequência diminui temos um DOWN-CHIRP
 
-Em relação aos saltos, um salto decodificado representa um símolo e esse pode representar um ou mais bits de dados e apresenta um total de 2^SF valores possíveis.
+Em relação aos saltos, um salto decodificado representa um símbolo e esse pode representar um ou mais bits de dados e apresenta um total de 2^SF valores possíveis.
 
 ![[Pasted image 20250424091120.png]]
 
