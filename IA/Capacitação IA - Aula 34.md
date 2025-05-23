@@ -93,6 +93,138 @@ No caso acima, beta é o coeficiente angular que determina a angulação da reta
 
 ##### <span style="color:rgb(4, 255, 0)">Como estimar o valor de alfa e beta?</span>
 
+![[Pasted image 20250523175751.png]]
+
+-  Com base nos dados obtidos da amostra
+-  Ao treinar um modelo de regressão linear, busca-se obter o valor do coeficiente angular que minimiza a função de custo.
+	-  Ou seja, o coeficiente deve ser o que apresenta o menor "índice de erro".
+
+
+![[Pasted image 20250523180544.png]]
+
+![[Pasted image 20250523180946.png]]
+
+![[Pasted image 20250523181119.png]]
+
+##### <span style="color:rgb(4, 255, 0)">Técnicas para minimização de erros</span>
+
+-  Método dos mínimos quadrados 
+	-  Torna-se muito lento quando o número de caracterísiticas cresce bastante.
+-  Método gradiente descendente
+	-  Algoritmo de otimização que realiza o ajuste de parâmetros de forma iterativa com o objetivo de encontrar os valores do coeficiente que minimiza a função de interesse.
+	-  O tamanho dos passos é definido pelo hiperparâmetro "taxa de aprendizado/aprendizagem".
+
+~={blue}E se tiver mais que uma feature?=~
+
+	Então para esse casos vão ser incorporados uma nova variável dependente junto com um coeficiente.
+
+![[Pasted image 20250523182030.png]]
+
+![[Pasted image 20250523182159.png]]
+
+![[Pasted image 20250523182249.png]]
+![[Pasted image 20250523182258.png]]
+![[Pasted image 20250523182410.png]]
+![[Pasted image 20250523182430.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
